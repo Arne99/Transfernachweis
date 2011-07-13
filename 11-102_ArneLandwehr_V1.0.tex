@@ -1,0 +1,410 @@
+% !TEX encoding = IsoLatin
+\documentclass [12pt,a4paper,oneside] {scrbook}
+
+%Gr??e des Schriftfeldes Breite=16cm H?he=23cm
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc} %Zeichenkodierung
+\usepackage[T1]{fontenc} %Trennung von W?rtern mit Umlauten
+\usepackage{lmodern}
+\usepackage{ngerman}%Silbentrennung nach neuer Rechtschreibung
+\usepackage{subfigure}
+\usepackage{color} % Farbiger Text
+\usepackage{graphicx} %Funktionen zum Einf?gen von Bildern
+\usepackage[pdftex,bookmarks=true]{hyperref}
+
+
+\begin{document}
+
+% Titelblatt
+ \input{Abschnitte/Titel}
+
+\clearpage
+\pagestyle{empty}
+\renewcommand*{\chapterpagestyle}{empty}
+\tableofcontents
+\clearpage
+\pagestyle{headings}
+\renewcommand*{\chapterpagestyle}{fancy} 
+\fancyfoot[L]{11-102\_ArneLandwehr.pdf} 
+\fancyfoot[C]{V1.0} %Versionsnummer
+\fancyfoot[R]{\thepage} %Seitennummer
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/projektsteckbrief}
+\caption{Projektsteckbrief}
+\end{figure}
+
+\chapter{Projekt/ Projektziele}
+In diesem ersten Kapitel wird unter \ref{sec:beschreibung}  das in diesem Transfernachweis vorgestellte Projekt  ''Umlage 2010 - EPBB'' erläutert und sowohl der Kunde als auch die MSG Systems AG als das Projekt durchführende Unternehmen näher beleuchtet. Neben den beiden beteiligten Partnern wird kurz die Beziehung zueinander dargestellt um den Kontext des Projektes zu umreißen. Aufbauend auf diesem Überblick werden in \ref{sec:ziele} die Projektziele strukturiert dargestellt um die Erwartungen der BG Bau an die MSG Systems klar zu fixieren und den Projektauftrag zu definieren. 
+
+
+\section{Projektbeschreibung}
+\label{sec:beschreibung}
+Die \textbf{Berufsgenossenschaft der Bauunternehmen}, im weiteren als BG BAU abgekürzt, ist die gesetzliche Unfallversicherung für die Bauwirtschaft. Sie ist, wie die Kranken- und Rentenversicherung, eine Säule im deutschen Sozialversicherungssystem und sind als Körperschaft des öffentlichen Rechts in Selbstverwaltung organisiert. Ihre Aufgabe ist die Verhütung von Arbeitsunfällen und Berufskrankheiten im Baugewerbe. Beschäftigte der versicherten Bauunternehmen die einen Arbeitsunfall erlitten haben werden durch die BG BAU medizinisch, beruflich und sozial rehabilitiert. Finanziert wird die BG durch die Beiträge der ihr durch eine Pflichtmitgliedschaft zugewiesenen Unternehmen. Die BG Bau besaß 2009 488.146 Mitglieder (Unternehmen und Bauherren) und versicherte damit  2.612.60 Personen. Die Umlage 2009 besaß ein Volumen von 1,47 Mrd. Euro.    
+\\
+Die Höhe der Beiträge wird durch eine jährliche Umlage bestimmt. Bei dieser werden die Ausgaben der Berufsgenossenschaft auf alle Mitglieder, gewichtet nach den jeweiligen Lohnsummen und Gefahrklassen (Unfallrisiko bei dem Unternehmen), verteilt. Am Ende eines Umlagelaufes werden die Abrechnungsbescheide und Vorschussbescheide an die Unternehmen verschickt.  
+\\
+\\
+Seit 2005 arbeitet die BG Bau mit der Software ''Phoenics'', die von der MSG Sytems AG als Großprojekt gewartet und weiterentwickelt wird und praktisch alle Geschäftsprozesse abdeckt.Ein Teil der Software ist das Umlagesystem, hierbei handelt es sich um drei Batches die nacheinander laufen müssen und die Umlage einer Berufsgenossenschaft automatisieren.  
+\\
+Die BG Bau besteht aus 8 Bezirksverwaltungen die bis zum Jahre 2010 praktisch autonom arbeiteten und jeweils ein autonomes Phoenics System besaßen. Aufgrund eines Beschlusses des Gesetzgebers  wurde die Autonomie der Bezirksverwaltungen eingeschränkt und die Struktur vereinheitlicht. Hierzu wurden alle bisher autonomen Phoenics System von der MSG Systems in ein zentrales Phoenics System migriert und die Software entsprechend angepasst. Das damalige Zusammenlegungs-Projekt wurde als ''EPBB'' (\underline{E}in \underline{P}hoenics \underline{B}G \underline{B}au) bezeichnet.
+\\
+\\
+Noch offen ist die Erweiterung des Umlagesystems der Software im Zuge von EPBB für die Umlage 2010 ( im Jahre 2011). Die Erweiterung der Software wird von der BG Bau als höchst kritisch eingestuft. Die Umlage ist das ''Highlight'' des Jahren in einer BG und beschwert ihr einen Großteil ihrer Einnahmen. Die Software ist aktuell (01.01.2011) nicht in einer zentralen Umgebung lauffähig und der für die Umlage angesetzte Starttermin, der  kann aufgrund von rechtlichen Bedingungen nicht verschoben werden.
+\\
+\\
+Die \textbf{MSG Systems AG}  gehört mit über 3000 Mitarbeitern 	und einem Umsatz von 364 Mio. Euro in 2010 zu den größten IT-Beratungs- und Systemintegrationsunternehmen in Deutschland.  Die Firma wurde 1980 in München gegründet und ihr Angebot umfasst neben branchenspezifischen Gesamtlösungen auch die Entwicklung von Individual- und Standardsoftware. Kernkompetenz der MSG sind IT-Dienstleistungen für die Versicherungsbranche (erst- und Rückversicherer), die Automobilindustrie sowie die Finanzdienstleister. Die Firma übernimmt, vor allem im Versicherungsbereich, mehrheitlich Großprojekte mit einer Laufzeit von mehreren Jahren.  
+\\
+\\
+Die MSG Systems übernahm die Entwicklung und Wartung der Software ''Phoenics'' im Jahr 2005 von der Firma Plenum, der das Vertrauen des Kunden entzogen wurde.
+Die Pflege des Softwaresystems ist von der MSG Systems aus als Großprojekt aufgesetzt und organisiert (s. \ref{sec:organisation}). Zur Zeit arbeiten für das Projekt ca. 150 ( in den Bereichen: Entwicklung, Test, Produktmanagment, Betrieb und Managment) Personen. Hiervon sind ca. 60 Mitarbeiter direkt bei der MSG angestellt und 90 Mitarbeiter sind Angestellte der BG Bau die für das Projekt abgestellt wurden. Das Projekt besitzt einen Gesamtumsatz von ca. 40 Millionen Euro pro Jahr, wobei es sich um ein Aufwandsprojekt handelt. 
+\\
+\\
+\label{mark:projektauftrag} In diesem Kontext erging von der  BG Bau folgender \textbf{Projektauftrag} an die MSG Systems AG:
+Das Umlagesystem ist für die Umlage 2010 zu erweitern und zu testen und die Fuktionsfähigkeit sicher bzw. wiederherzustellen. Die Abnahmetests des Kunden und der produktive Lauf müssen durch die Entwicklungsabteilung der MSG begleitet und unterstützt werden.
+\\
+\\
+Hierzu wurde von der MSG das Projekt ''Umlage 2010 - EPBB'' aufgesetzt das Gegenstand dieses Transfernachweises ist. 
+\\
+Die weitere Arbeit ist aus Sicht des Projektmanagers geschrieben der von seiner Firma, der MSG Systems AG, beauftragt wurde das Projekt ''Umlage 2010 - EPBB'' erfolgreich durchzuführen.   
+ 
+\section{Zielbeschreibung}
+\label{sec:zielbeschreibung}
+Ausgehend von dem erteilten Projektauftrag (s. \ref{mark:projektauftrag}) der BG Bau müssen zusammen mit dem Auftraggeber die konkreten Projektziele ermittelt werden. Hierbei wird das im Projektauftrag enthaltene Primärziel ''Automatisierung der Umlage 2010 der BG Bau'' in weitere Unterziele unterteilt. Eine Unterteilung kann sowohl in ''Ergebnis- /Vorgehensziele'' erfolgen, oder in die Kategorien ''Kosten- / Leistungs- / Termin- / Sozialeziele''. \\
+Im Einverständnis mit der BG Bau wird hier die zweite Kategorisierung angewandt, da sie die ermittelten Unterziele konkreter gliedert. 
+Die ermittelten Projektziele sind unterteilt nach den Kategorien in Abbildung \ref{abb:zielbaum} dargestellt. 
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/ziele_baum}
+\caption{Zielhierarchie}
+\label{abb:zielbaum}
+\end{figure}
+Um den Erfolg des Projektes nach seinem Abschluss bestimmen zu können werden die Ziele ''SMART'' (\underline{S}pezifisch, \underline{M}essbar, \underline{A}kzeptabel, \underline{R}ealistisch, \underline{T}erminiert) beschrieben und anschließend mit dem Auftraggeber priorisiert.
+Einen Überblick über alle Ziele, ihre Messgrößen und die vorgenommene Priorisierung bietet die Tabelle\ref{tab:ziele_liste}.
+\\
+\\
+Neben der Strukturierung der Ziele ist eine weitere Analyse hinsichtlich der Zielbeziehungen erforderlich. Durch diese kann der Projektleider mögliche Konflikte erkennen oder sich gegenseitig unterstützende Ziele verstärkt angehen. \\
+Zielbeziehungen lassen sich charakterisieren nach:
+\begin{description}
+\item[Zielantinomie] Ziele schließen sich gegenseitig aus.
+\item[Zielkonkurrenz] Ziele konkurrieren miteinander.
+\item[Zielneutralität] Ziele sind vollkommen unabhängig voneinander.
+\item[Zielkomplementarität] Das Erreichen des einen Zieles fördert das andere.
+\item[Zielidentität] Es handelt sich um die gleichen Ziele.
+\end{description}
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/zielbeziehungen}
+\captionof{table}{Zielbeziehungen}
+\label{tab:zielbeziehungen}
+\end{figure}
+
+Im weiteren sind anhand von drei Beispielen zu den in der Zielbeziehungsmatrix \ref{tab:zielebeziehungen} aufgelisteten Zielen die Zielbeziehungen dargestellt:
+ \begin{enumerate}
+ \item Die Ziele ''Laufzeit <= 56 Stunden (10)''  und ''Umlagelauf im Zeitfenster (3)'' sind komplementär zueinander.\\
+ Wird die Laufzeit des Umlagebatches auf unter 56 Stunden gebracht steigert dieses die Chancen das vorgeschrieben Zeitfenster nicht zu reißen. Es besteht keine Zielidentität, da 
+ das Zeitfenster z.B. auch durch eine zu lange manuelle Qualitätskontrolle gerissen werden kann.
+ \item Die Ziele ''Sozialer Bereitschaftsplan erstellt (14)'' und 'Alle verschickten Dokumente mit BG Bau Bezug (7)''
+ sind neutral zu einender.\\
+ Weder das Ziel 14 noch das Ziel 7 haben durch ihre Erfüllung oder Nichterfüllung eine Auswirkung auf das andere.
+ \item  Die Ziele ''Freigabe der Implementierung am 15.03.2011(12)'' und ''Keine Mitarbeiterüberlastung vorhanden'' stehen in Konkurrenz zu einander.\\
+ Durch den sehr knappen Zeitplan ist eine Freigabe der Implementierung in einer normalen 40 Stunden Woche kaum realistisch.  
+ \end{enumerate}
+  
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/ziele_liste}
+\captionof{table}{Zielbeschreibung}
+\label{tab:ziele_liste}
+\end{figure}
+
+\label{sec:ziele}
+
+\chapter{Projektumfeld, Stakeholder}
+\label{chap:projektumfeld}
+Projekte bewegen sich nicht in einem leeren Raum, sondern werden immer durch ihren Kontext, ihre Umwelt, beeinflusst. Alle für den Verlauf des Projektes wesentlichen Umwelteinflüsse werden als Umweltfaktoren bezeichnet und die Gesamtheit der Umweltfaktoren ergibt das Projektumfeld. \\
+Zur Erreichung der in \ref{sec:zielbeschreibung} dargestellten Ziele muss das in \ref{sec:beschreibung} bereits umrissene Projektumfeld nun genauer analysiert und strukturiert werden. Diese Analyse ist Gegenstand des folgenden Abschnittes \ref{sec:projektumfeld}.\\
+Die hierbei ermittelten sozialen Faktoren werden als Stakeholder bezeichnet. Eine korrekte Ermittlung und Klassifizierung aller relevanten Stakeholder ist essentiell für das Erreichen der Projektziele und erfolgt in \ref{sec:stakeholder}.   
+\section{Umfeldfaktoren}
+Die Umfeldanalyse für das Projekt 'Umlage 2010 - EPBB''  ergab das  in Abbildng \ref{tab:projektumfeld}  dargestellte Projektumfeld. Hierbei wurden alle Umfeldfaktoren die direkt das Projektteam betreffen als interne Faktoren und alle weiteren als externe Faktoren charakterisiert. \\ 
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/projektumfeld}
+\captionof{table}{Projektumfeld}
+\label{tab:projektumfeld}
+\end{figure}
+Aufgrund des komplexen Kundenumfeldes sind die meisten ermittelten Faktoren extern. Ebenfalls relevant sind die gesetzlichen Richtlinien und Verordnungen. Z.B. die Arbeitsgesetze die es trotz des knappen Terminplanes unbedingt zu beachten gilt.  
+Das eigene Projektteam wurde unterteilt in ''MSG Mitarbeiter'' und ''externe Mitarbeiter'', diese Unterteilung fand aufgrund des unterschiedlichen Konfliktpotenzials statt (s. Abb. \ref{tab:stakeholder}).
+\\
+\\
+Die ermittelten Umfeldfaktoren sind nicht isoliert voneinander zu betrachten sonder besitzen Schnittstellen zueinander. Die durch eine weitergehende Analyse ermittelten Schnittstellen sind in der Matrix \ref{tab:schnittstellen} aufgelistet. 
+\\
+\\
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/schnittstellen}
+\captionof{table}{Umfeldfaktoren Schnittstellen-Matrix}
+\label{tab:schnittstellen}
+\end{figure}
+\\
+\\
+Zur Verdeutlichung werden im Weiteren drei der aufgelisteten Schnittstellen exemplarisch dargestellt:
+\begin{description}
+\item[Interne Integrationszyklen - Interne Testumgebungen]  Auf den internen Testumgebungen erfolgt der Test der Implementierung der Projektentwickler durch die Projekttester. Diese Testumgebungen werden lediglich einmal in der Woche durch eine interne Integration (der interne Integrationszyklus) neu deployed. Wird dieser Termin vom Entwickler knapp verpasst kann dieses direkt zu einem Verzug von einer Woche führen. Ein manuelles deployen der Umgebung ist möglich aber fehleranfällig und zeitintensiv.
+\item[Datenschutzbestimmungen - Abnahmeumgebungen] Die Abnahmeumgebungen dienen für die abschließenden Tests der ausgelieferten Software durch den Kunden. Da die Tester des Kunden hier auf einem Abzug der Produktionsdaten testen unterliegen sie den Datenschutzbestimmungen. Zugänge von Entwicklern auf diese Umgebungen sind deswegen nicht möglich. Bei der Planung muss deswegen berücksichtigt werden das das Bugfixing von Fehlern aus dieser Umgebung deutlich aufwendiger und komplexer ist.
+\item[Hauptverwaltung der BG Bau - Geschäftsführungen der BVen] Durch die Vereinheitlichung der BG Bau (s. \ref{sec:beschreibung}) wurden die früher autonom agierenden Geschäftsführungen der einzelnen Bezirksverwaltungen der Hauptverwaltung in Berlin unterstellt. Damit liegt die Entscheidungsgewalt über das Projekt (von der Seite des Kunden aus) bei der Hauptverwaltung. Aufgrund der gewachsenen Strukturen muss dieses neue Organigramm allerdings erst beim Kunden etabliert werden. Für den Projektleiter bedeutet dieses das er sich bei allen Entscheidungen direkt an die Hauptverwaltung wenden muss, ohne die Bezirksverwaltungen vollständig vom Informationsfluss auszugrenzen.   
+\end{description}
+
+\label{sec:projektumfeld}
+\section{Stakeholder}
+\label{sec:stakeholder}
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/stakeholder}
+\captionof{table}{Stakeholder}
+\label{tab:stakeholder}
+\end{figure}
+Die sozialen Umfeldfaktoren aus \ref{tab:projektumfeld}  stellen die Stakeholder des Projektes dar. Um eine Strategie erarbeiten zu können wie der Projektleiter mit den verschiedenen Stakeholder umgehen kann müssen diese nach ihren Interessen, ihrem Einluss und dem bestehenden Konfliktpotenzial bewertet werden. \\
+Die für das Projekt erstellte Tabelle \ref{tab:stakeholder} listet dabei die Stakeholder nach ihren Nummern in der Tabelle der Umfeldfaktoren \ref{tab:projektumfeld} auf und ist damit hinsichtlich ihrer Reihenfolge nicht wertend.
+\\
+\\
+Auf Basis dieser Analyse lässt sich ein Stakeholder-Portfolio erstellen. In diesem werden die einzelnen Stakeholder jeweils nach ihrer Bewertung in \ref{tab:stakeholder}  hinsichtlich Einfluss bzw. Konfliktpotenzial in vier Quadranten unterteilt.\\
+Jedem Quadranten wird nun eine Strategie und eine Menge von entsprechenden Maßnahmen zugeordnet um de Stakeholder für das Projekt zu gewinnen, bzw. sie au der Seite des Projektes zu behalten. Das erstellte Protfolio ist unter \ref{abb:stakeholder_portfolio} dargestellt. Hierbei handelt es sich allerdings lediglich um die Ausgangsdarstellung zu Beginn des Projektes, sie ist im Laufe des Projektes regelmäßig zu kontrollieren und zu aktualisieren. Das gleiche gilt für die im Weiteren dargelegten Maßnahmen.
+\\
+\\  
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/stakeholder_portfolio}
+\caption{Stakeholder-Portfolio}
+\label{abb:stakeholder_portfolio}
+\end{figure}
+\\
+\\
+Je nach Quadrant des Stakeholder-Portfolios wird folgende Strategie und Maßnahmen verfolgt:
+\begin{description}
+\item[Quadrant 1 (hoch/hoch)] Es wird eine partizipative Strategie gewählt um diese sehr wichtigen Stakeholder weiter für das Projekt zu gewinnen und das Konflikt potenzial zu vermindern. \\ 
+Folgende Maßnahmen werden ergriffen: regelmäßige Status Meetings (bereits in den Zielen vereinbart s. \ref{tab:ziele_liste} Ziel 6), Einzelgespräche, Einbindung in Entscheidungsprozesse, Mailverteiler.
+\item[Quadrant 2 (hoch/niedrig)] Es wird eine partizipative Strategie gewählt, da es sich hier um einflussreiche Stakeholder handelt die bereits für das Projekt gewonnen wurden, hiermit wird versucht den Zustand zu halten.\\
+Folgende Maßnahmen werden ergriffen: regelmäßige Status Meetings, Mailverteiler, Einbindung in Entscheidungsprozesse.
+\item[Quadrant 3 (niedrig niedrig)] Es wird eine restriktive Strategie ergriffen, da es sich um dem Projekt wohlgesonnene Stakeholder handelt die bisher wenig oder keinen Einfluss haben. 
+\\Folgende Maßnahmen werden ergriffen: Da es sich um eine beträchtliche Anzahl von Personen handelt die häufig mit dem Projekt nur sehr indirekt zu tun haben (z.B. die Sachbearbeiter der BG) werden sie nicht mit in den Informationsfluss eingebunden. Sie werden lediglich nach der Beendigung des Projektes über den Erfolg per Mail informiert.
+\item[Quadrant 4 (niedrig/hoch)] es wird eine partizipative Strategie ergriffen um diese Stakeholder bereits am Anfang in das Projekt mit einzubeziehen und so das Konflikpotenzial zu senken. \\
+Folgende Maßnahmen werden ergriffen: Mailverteiler. 
+\end{description}
+
+\chapter{Risikoanalyse}
+Aufbauend auf der in Kapitel \ref{chap:projektumfeld} durchgeführten Projektumfeld-Analyse gehört es ebenfalls zu den Aufgaben und Pflichten eines Projektleiters eine Risikoanalyse des Projektes durchzuführen. DIe Risikoanalyse kann sowohl eine vorgegebene Notwendigkeit, im Falle von gesetzlichen Vorgaben (z.B. KontraG oder Basel ||) oder Corporate Governance Richtlinien, als auch ein wertvolles Werkzeug zum erfolgreichen Projektmanagment sein. \\
+Immer in Bezug zum Projektkontext gilt es hierbei folgender Prozess: 
+\begin{enumerate}
+\item Risiken identifizieren
+\item Risiken analysieren
+\item Maßnahmen planen
+\item Maßnahmen kontrollieren
+\end{enumerate}
+
+Ebenso wie bie Stakeholderanalyse (s. \ref{sec:stakeholder}) handelt es sich bei der Risikoanalyse nicht um eine einmalige Maßnahme im Zuge der Projektplanung, sondern um eine kontinuierlich Tätigkeit. So sollte der Projektmanager spätestens zu jedem eingetretenen Meilenstein die anfänglich Risiko- und Maßnahmenanalyse auf ihre Aktualität hin überprüfen und gegebenenfalls anpassen. 
+\\
+\\
+Im Weiteren werden in \ref{sec:risiko} die Risiken der Projektes  'Umlage 2010 - EPBB'' identifiziert und klassifiziert um aufbauend auf diesen Ergebnissen die Risiken in \ref{sec:massnahmen} zu bewerten und notwendige Maßnahmen zu ermitteln.
+
+\section{Erfassung, Klassifizierung und Beschreibung von Risiken}
+\label{sec:risiko}
+Ausgehend von der Umfeldanalyse \ref{chap:projektumfeld} ) wurde die dort aufgelisteten sachlichen Faktoren, sowie die ermittelten Stakeholder überprüft ob sie Risiken für das Projekt darstellen oder beinhalten. Anschließend wurde mittels einer Brainstorming-Sitzung eine Kreativitätstechnik angewendet um weitere Risiken zu identifizieren.
+\\
+\\
+Die hierdurch identifizierten Risiken sind in Tabelle \ref{tab:risiken_uebersicht} dargestellt. \\
+Eine Katalogisierung erfolgte dabei nach:  
+
+\begin{description}
+\item[technische Risiken] Das Risiko beinhaltet Probleme durch oder mit technischen Gegebenheiten.
+\item[fachliche Risiken] Das Risiko beinhaltet Probleme mit den fachlichen Anforderungen an das Projekt.
+\item[ressourcenbedingte Risiken] Das Risiko beinhaltet einen eventuellen Ressourcen Engpass.
+\item[terminliche Risiken] Das Risiko beinhaltet ein Problem für die Einhaltung von gesetzten Terminzielen. 
+\end{description}
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/risiken_uebersicht}
+\captionof{table}{Auflistung und Beschreibung der Risiken }
+\label{tab:risiken_uebersicht}
+\end{figure}
+
+\section{Quantitative Bewertung der Risiken und Maßnahmen zur Risikobegegnung}
+\label{sec:massnahmen}
+Die in \ref{tab:risiken_uebersicht} dargestellten Risiken werden nun bewertet nach:
+\begin{description}
+\item[der Eintrittswahrscheinlichkeit (ETW)] Wahrscheinlichkeit in \% das das jeweilige Risiko eintritt.
+\item[der Schadenshöhe (SH)] Kosten in Euro die durch das Risiko bei einem Eintritt entstehen würden.
+\item[dem Risikowert (RW)] Faktor aus der Eintrittswahrscheinlichkeit und der Schadenshöhe der eine Bewertung des Risikos in Euro darstellt. 
+\end{description}
+Die so bewerteten Risiken sind in Tabelle \ref{tab:risiken_bewertung} aufgelistet.
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/risiken_bewertung}
+\captionof{table}{Bewertung der Risiken}
+\label{tab:risiken_bewertung}
+\end{figure}
+
+Für jedes Risiko wird nun eine geeignete Maßnahme ermittelt, diese Maßnahmen können auf zwei unterschiedliche Arten auf das Risiko einwirken:
+\begin{description}
+\item[präventiv] die Maßnahme senkt die Eintrittswahrscheinlichkeit indem sie versucht das Risiko bereits im Vorhinein zu verhindern.
+\item[korrektiv] die Maßnahme senkt die Schadenshöhe der Maßnahme indem sie die Auswirkungen des Risikos bei Eintritt mindert. 
+\end{description}
+
+Die ermittelten Maßnahmen, ihre Beschreibung und ihre Kosten, sowie die durch sie entstehenden neuen Eintrittswahrscheinlichkeiten und  Schadenshöhen sind in Tabelle \ref{tab:risiken_massnahmen} dargestellt.
+Aufgrund der neu ermittelten Risikowerte und der Kosten der jeweiligen Maßnahme lässt sich ermitteln ob eine Durchführung der Maßnahme rentabel ist oder nicht.
+Dieses ist der Fall wenn der neu ermittelte Risikowert plus die Kostend er Maßnahme geringer ist als der alte Risikowert. Das Ergebnis dieser Berechnung ist ebenfalls in der Tabelle dargestellt.
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/risiken_massnahmen}
+\captionof{table}{Massnahmen je Risiko und deren Wirkung}
+\label{tab:risiken_massnahmen}
+\end{figure}
+
+Abschließend lassen sich die Risiken und ihre Maßnahmen analog zum Stakeholder-Portfolio in einem Risiko-Portfolie darstellen. 
+Das Portfolio ist in Abbildung \ref{abb:risiken_portfolio} zu finden.
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/risiken_portfolio}
+\caption{Risiko-Portfolio}
+\label{abb:risiken_portfolio}
+\end{figure}
+
+\chapter{Projektorganisation}
+\label{sec:organisation}
+\section{Organisationsformen des Projektes}
+Ein Projekt ist bereits nach seiner Definition ein einmaliges, komplexes und querschnittliches Vorhaben. Dieses impliziert bereits das die Organisationsform eines Projektes von derjenigen der Stammorganisation abweicht. Damit gilt es eine geeignete Organisationsform für das jeweilige Projekt zu ermitteln und zu etablieren.
+\\
+\\
+Im wesentlichen lassen sich drei unterschiedliche Arten von Projektorganisationsformen auflisten. Jede dieser Formen besitzt ihre Stärken und ihre Schwächen so das es gilt diese vor einer Wahl der Form gegeneinander abzuwägen:
+\begin{description} 
+\item[die Einfluss-Projektorganisation] In ihr wird der Projektleiter als Stabsstelle in die ansonsten unveränderte Stammorganisation eingebettet. Vorteil ist hier unter anderem die schnelle Etablierung dieser Organisationsform, allerdings besitzt der Projektleiter in ihr keinerlei Weisungs- oder Entscheidungsbefugnisse. Er  übt damit mehr eine beratende als eine leitende Funktion aus.
+\item[die Matrix-Projektorganisation] In ihr werden die Kompetenzen zwischen der Linien- und der Projektorganisation aufgeteilt. Der Projektleiter besitzt Entscheidungs- und Weisungsbefugnisse für projektrelevante Vorgänge. Vorteile sind hier unter anderem die schnelle Etablierung und die Kompetenzen des Projektleiters. Ein Nachteil ist die nicht eindeutige Weisungsbefugnis. Projektmitarbeiter sind in der Matrixorganisation immer Diener zweier Herren und es besteht ein zum Teil hohes Konfliktpotenzial. 
+\item[die Autonome Projektorganisation] Bei ihr wird das Projekt aus der Linie ausgegliedert und wird zu einem selbstständigen Element der Stammorganisation. Der Projektleiter übernimmt hierdurch sowohl die fachliche als auch disziplinarische Verantwortung über die Projektmitarbeiter. Dieses ist als größter Vorteil dieser Organisationsform zu werten, allerdings lässt sie sich nur langsam etablieren. Hierdurch ist diese Organisationsform vor allem für größere Projekte interessant.
+\end{description}
+
+Das Projekt ''Umlage 2010 - EPBB'' stellt ein Projekt in einem Projekt dar. Das übergeordnete Projekt Phoenics (s. die Beschreibung des Projektkontextes in \ref{sec:beschreibung}) ist ein nach der autonomen Projektorganisation organisiertes Projekt der msg systems und bildet damit die Stammorganisation für das Projekt ''Umlage 2010 - EPBB''. \\
+Aufgrund der Kritikalität des Projektes, der Dauer von ca. 4 Monaten und geforderten kurzfristigen Etablierung des Projektes wurde Matrix-Projektorganisation gewählt. Hieraus entsteht das in Abbildung \ref{abb:organisation_organigramm} dargestellte Organigramm. In der Abbildung ist die Projektorganisation im Kontext der Stammorganisation ersichtlich, weiterhin sind an den Projektmitarbeitern ihre Projekt spezifischen Rollen hinterlegt. \\
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/rollen}
+\captionof{table}{Rollen im Projekt}
+\label{tab:rollen}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth,height= 22.5 cm]{Bilder/organigramm}
+\caption{Projektorganisation}
+\label{abb:organisation_organigramm}
+\end{figure}
+
+Eine Rolle umfasst dabei die Aufgaben, Befugnisse und Verantwortungen die der jeweilige Mitarbeiter im Kontext des Projektes besitzt. Die Auflistung aller vorhandenen Rollen mit ihren Beschreibungen erfolgt in Tabelle \ref{tab:rollen}.
+\section{Kommunikation}
+
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth]{Bilder/kommunikationsmatrix}
+\captionof{table}{Kommunikationsmatrix}
+\label{tab:kommunikationsmatrix}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/eskalationsweg}
+\caption{Eskalationsweg im Projekt ''Umlage 2010 - EPBB''}
+\label{abb:eskalationsweg}
+\end{figure}
+
+\chapter{Phasenplanung}
+\section{Beschreibung der Projektphasen und Meilensteine}
+\section{Veranschaulichung der Projektphasen}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/phasenplan}
+\caption{Phasenplan}
+\label{abb:phasenplan}
+\end{figure}
+
+
+\chapter{Projektstrukturplan}
+\section{Darstellung und Codierung des PSP}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth, height=22 cm]{Bilder/psp}
+\caption{Projektstrukturplan}
+\label{abb:psp}
+\end{figure}
+
+\section{Arbeitspaketbeschreibung}
+
+
+
+
+\chapter{Ablauf- und Terminplanung}
+\section{Vorgangsliste}
+
+\begin{figure}[h]
+\includegraphics [width=\linewidth,height= 22 cm]{Bilder/vorgangsliste}
+\captionof{table}{Vorgangsliste}
+\label{tab:vorgangsliste}
+\end{figure}
+
+\section{Balkenplan}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/balkenplan}
+\caption{Vernetzter Balkenplan}
+\label{abb:balkenplan}
+\end{figure}
+
+\chapter{Einsatzmittel- /Kostenplanung}
+\section{Einsatzmittelbedarf / Einsatzmittelplan}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/ressourcen}
+\captionof{table}{Einsatzmittel}
+\label{abb:ressourcen}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/vorgang_ressourcen}
+\captionof{table}{Vorgangsliste mit Zuordnung der Ressourcen}
+\label{abb:vorgang_ressourcen}
+\end{figure}
+
+\section{Projektkosten}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/kosten}
+\captionof{table}{Zuordnung Kosten zu Vorgangsliste}
+\label{abb:kosten}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/kostengang}
+\caption{Kostenganglinie}
+\label{abb:kostengang}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Bilder/kostensumme}
+\caption{Kostensummenlinie}
+\label{abb:kostensumme}
+\end{figure}
+
+\chapter{Verhaltenskompetenz}
+\section{Konflikte und Krisen}
+\section{Ergebnisorientierung}
+
+\chapter{Verhaltenskompetenz}
+\section{Berichtswesen, Projektdokumentation}
+
+% Abbildungsverzeichnis
+   % \clearpage
+    \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+    \listoffigures
+% Tabellenverzeichnis
+  %  \clearpage
+    \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+    \listoftables
+
+
+\bibliographystyle{alphadin}
+
+\end{document}
