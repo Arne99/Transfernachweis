@@ -11,21 +11,20 @@
 \contentsline {section}{\numberline {4.1}Organisationsformen des Projektes}{18}{section.4.1}
 \contentsline {section}{\numberline {4.2}Kommunikation}{19}{section.4.2}
 \contentsline {chapter}{\numberline {5}Phasenplanung}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Beschreibung der Projektphasen und Meilensteine}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Der Phasenplan}{25}{section.5.2}
-\contentsline {chapter}{\numberline {6}Projektstrukturplan}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}Darstellung und Codierung des PSP}{28}{section.6.1}
-\contentsline {section}{\numberline {6.2}Arbeitspaketbeschreibung}{28}{section.6.2}
-\contentsline {chapter}{\numberline {7}Ablauf- und Terminplanung}{30}{chapter.7}
-\contentsline {section}{\numberline {7.1}Vorgangsliste}{30}{section.7.1}
-\contentsline {section}{\numberline {7.2}Balkenplan}{30}{section.7.2}
-\contentsline {chapter}{\numberline {8}Einsatzmittel- /Kostenplanung}{33}{chapter.8}
-\contentsline {section}{\numberline {8.1}Einsatzmittelbedarf / Einsatzmittelplan}{33}{section.8.1}
-\contentsline {section}{\numberline {8.2}Projektkosten}{33}{section.8.2}
-\contentsline {chapter}{\numberline {9}Verhaltenskompetenz}{37}{chapter.9}
-\contentsline {section}{\numberline {9.1}Konflikte und Krisen}{37}{section.9.1}
-\contentsline {section}{\numberline {9.2}Ergebnisorientierung}{37}{section.9.2}
-\contentsline {chapter}{\numberline {10}Verhaltenskompetenz}{38}{chapter.10}
-\contentsline {section}{\numberline {10.1}Berichtswesen, Projektdokumentation}{38}{section.10.1}
-\contentsline {chapter}{Abbildungsverzeichnis}{38}{section.10.1}
-\contentsline {chapter}{Tabellenverzeichnis}{39}{chapter*.2}
+\contentsline {section}{\numberline {5.1}Projektphasen und Meilensteine}{24}{section.5.1}
+\contentsline {section}{\numberline {5.2}Der Phasenplan}{27}{section.5.2}
+\contentsline {chapter}{\numberline {6}Projektstrukturplan}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Darstellung und Codierung des PSP}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Arbeitspaketbeschreibung}{29}{section.6.2}
+\contentsline {chapter}{\numberline {7}Ablauf- und Terminplanung}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Vorgangsliste}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Balkenplan}{33}{section.7.2}
+\contentsline {chapter}{\numberline {8}Einsatzmittel- /Kostenplanung}{36}{chapter.8}
+\contentsline {section}{\numberline {8.1}Einsatzmittelbedarf}{36}{section.8.1}
+\contentsline {section}{\numberline {8.2}Projektkosten}{37}{section.8.2}
+\contentsline {chapter}{\numberline {9}Verhaltenskompetenz}{42}{chapter.9}
+\contentsline {section}{\numberline {9.1}Kreativit\"at}{42}{section.9.1}
+\contentsline {section}{\numberline {9.2}Ergebnisorientierung}{43}{section.9.2}
+\contentsline {chapter}{\numberline {10}Berichtswesen, Projektdokumentation}{44}{chapter.10}
+\contentsline {chapter}{Abbildungsverzeichnis}{44}{chapter.10}
+\contentsline {chapter}{Tabellenverzeichnis}{45}{chapter*.2}

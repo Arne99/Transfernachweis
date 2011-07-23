@@ -34,7 +34,7 @@
 \pagestyle{fancy}
 
 \begin{figure}[h]
-\includegraphics [width=\linewidth]{Bilder/projektsteckbrief}
+\includegraphics [width=\linewidth,height=22 cm]{Bilder/projektsteckbrief}
 \caption{Projektsteckbrief}
 \end{figure}
 
@@ -339,9 +339,17 @@ Ein weiterer und Projektkritischer Kommunikationsweg ist der Eskalationspfad, sp
 Jedes Projekt lässt sich in verschiedene Zusammenhängende Abschnitte unterteilen die sich durch ihre Haupthandlungen bzw. -aktivitäten deutlich von den jeweils anderen Abschnitten abgrenzen. Diese Abschnitte als grobe Projekteinheiten werden ''Phasen'' bzw. ''Projektphasen'' genannt. Die ''Phasenplanung'' ist damit eine Grobplanung des Projektes nach den jeweils identifizierten Projektphasen. \\
 Der Phasenplan enthält dabei neben den elementaren Phasen auch die Meilensteine die jeweils als Übergang zur der Folgephase dienen. Des weiteren kann im Zuge dieser Grobplanung bereits eine erste grobe Termin- und Aufwandsplanung erfolgen. Der Phasenplan wird damit selber zu Beginn des Projektes (typischerweise in der Initialisieungs-Phase) erstellt und bildet damit für den Auftraggeber eine Grundlage für die Entscheidung ob das Projekt weitergeführt oder gestoppt werden soll. \\
 Das Projektmanagment an sich stellt keine eigene Phase dar, sondern erfolgt Projekt übergreifend.  
+\\
+\\
+Die Einteilung eines Projektes in Phasen und damit auch der grundsätzliche Ablauf eines Projektes kann bereits durch ein allgemein verwendetes Vorgehensmodell vorgegeben werden. Ein Vorgehensmodell stellt eine Sammlung von ''Best PM Practices'' dar und hilft damit dem Projektleiter durch eine z.B. unternehmensweite Standardisierung seiner Tätigkeiten. Sie bieten ein Muster nach dem sich ein Projekt durchführen lässt und unterstützen dabei den Projektleiter z.B. durch Checklisten. \\  
 
-\section{Beschreibung der Projektphasen und Meilensteine}
-Im Rahmen des Projektes 'Umlage 2010 - EPBB'' wird ebenfalls durch den Projektleiter ein Phasenplan zu beginn des Projektes erstellt. Es wurden folgende Phasen ermittelt nach denen sich das Projekt grob unterteilen lässt:
+\section{Projektphasen und Meilensteine} 
+In dem Projekt ''Phoenics'' das den Kontext und die Linie für das Projekt ''Umlage 2010 - EPBB'' darstellt wird das Vorgehensmodell ''Pro3'' verwendet. Pro3 ist eine speziell für dieses Projekt angepasste Version des Vorgehensmodells der msg systems ag ''Profi''. Profi selber beruht wieder rum auf dem Rational Unified Prozess (RUP). \\
+Pro3 ist ausgerichtet auf Großprojekte die sich in der Wartung befinden und in denen nur ein geringerer Teil der Ausgaben (ca. 30\%) für Neuentwicklungen bereit stehen. Daher handelt es sich um ein nicht iteratives Vorgehensmodell das einen großen Wert auf Qualitätsüberprüfungen legt. 
+\\
+\\    
+Da sich das Projekt ''Umlage 2010 - EPBB'' bis auf die Implementierung der Kundenanforderungen nicht um typische Pro3 Aufgaben handelt wird dieses Vorgehensmodell nicht vollständig auf das hier beschriebene Projekt angewandt. Eine Umsetzung nach Pro3 erfolgt lediglich in der Implementierungs-Phase (z.B. die Ermittlung des benötigten Aufwandes in \ref{sec:Einsatzmittelbedarf}). Dieses Vorgehen wurde zuvor mit dem Entwicklungsleiter Herrn Weiss abgestimmt. \\
+ Es wurden damit zu Beginn des Projektes folgende Phasen ermittelt nach denen sich das Projekt grob unterteilen lässt:
 \begin{enumerate}
 \item die Initialisierungs-Phase.
 \item die Implementierungs-Phase.
@@ -384,6 +392,7 @@ Diese Grafik bietet somit sowohl dem Projektleiter, als auch dem Auftraggeber ei
 \end{figure}
 
 \chapter{Projektstrukturplan}
+\label{chap:psp}
 Der Projektstrukturplan (PSP) enthält eine strukturierte und vollständige Auflistung der gesamten im Projekt zu leistenden Arbeit. Damit organisiert und definiert er den gesamten Inhalt und den Umfang des Projektes. Aus ihm werden alle folgenden Pläne (z.B. in der Terminplanung der vernetzte Balkenplan \ref{abb:balkenplan}) hergeleitet, er wird deswegen auch als ''Mutter aller Pläne'' bezeichnet.
 \\
 \\
@@ -398,7 +407,7 @@ Ausgehend von einem Wurzelelement werden alle Arbeitspakete des Projektes in ein
 Jedem Arbeitspaket im PSP wird weiterhin eine eindeutige Kennzeichung zugewiesen.
 
 \section{Darstellung und Codierung des PSP}
-Für das Projekt 'Umlage 2010 - EPBB'' wird ein phasenorientierter PSP erstellt. Diese Strukturierungsart wurde gewählt, da die Phasen bereits eine natürliche Gliederung des Projektes vorgeben. Die Anwendung der anderen Orientierungsarten (s.o.) bietet sich hier nicht an, da sie keine klare und leicht nachvollziehbare Strukturierung erlauben.
+Für das Projekt ''Umlage 2010 - EPBB'' wird ein phasenorientierter PSP erstellt. Diese Strukturierungsart wurde gewählt, da die Phasen bereits eine natürliche Gliederung des Projektes vorgeben. Die Anwendung der anderen Orientierungsarten (s.o.) bietet sich hier nicht an, da sie keine klare und leicht nachvollziehbare Strukturierung erlauben.
 Der entstandene Phasenplan \ref{abb:psp} bietet einen vollständigen Überblick über die im Projekt zu leistende Arbeit, des weiteren wurde für die einzelnen Arbeitspakete eine numerische PSP-Codierung gewählt. 
 
 \begin{figure}
@@ -409,12 +418,29 @@ Der entstandene Phasenplan \ref{abb:psp} bietet einen vollständigen Überblick üb
 
 \section{Arbeitspaketbeschreibung}
 Für jedes im PSP \ref{abb:psp} enthaltene Arbeitspaket wird eine detailierte Beschreibung erstellt. Hierdurch wird eine klare Aufgabenverteilung innerhalb des Projektes erreicht und jedes Teammitglied kann innerhalb kürzester Zeit sich einen Überblick über alle seiner Aufgaben verschaffen. Um eine Einheitlichkeit zwischen den jeweiligen Arbeitspaketsbeschreibungen zu gewährleisten wird ein vorher definiertes Format als Basis für jede Beschreibung verwendet. \\
-Unter \rev{tab:arbeitspaket1} und \rev{tab:arbeitspaket2} sind beispielhaft zwei der erstellten Arbeitspakletbeschreibungen dargestellt. 
+Unter \ref{tab:arbeitspaket1} und \ref{tab:arbeitspaket2} sind beispielhaft zwei der erstellten Arbeitspakletbeschreibungen dargestellt. 
 
+\begin{figure}
+\includegraphics[width=\linewidth]{Bilder/arbeitspaket1}
+\captionof{table}{Darstellung des Arbeitspaketes ''Implementierung durchführen''}
+\label{tab:arbeitspaket1}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{Bilder/arbeitspaket2}
+\captionof{table}{Darstellung des Arbeitspaketes ''Testfälle durchführen''}
+\label{tab:arbeitspaket2}
+\end{figure}
 
 
 \chapter{Ablauf- und Terminplanung}
+\label{chap:terminplanung}
+In der Ablauf- und Terminplanung für ein Projekt werden die im PSP dargestellten Arbeitspakete zeitlich eingeplant. Mit ihr wird der größte Detailierungsgrad in der Planungsphase des Projektes erreicht. Die Terminplanung erlaubt dem Projektleiter einen klaren Überblick über den zeitlichen Verlauf des Projektes und befähigt ihn somit die gesetzten Terminziele zu erreichen. \\
+Das wichtigste Instrument für die Ablauf- und Terminplanung ist die Netzplantechnik, bei der alle Abläufe und deren Abhängigkeiten in einem gerichteten Graphen dargestellt werden. Eine alternative visualisierungs Methode bietet der vernetzte Balkenplan (Gantt-Chart).
+
 \section{Vorgangsliste}
+Basis der Vorgangsliste für das Projekt ''Umlage 2010 - EPBB'' sind die im PSP \ref{abb:psp} hinterlegten Arbeitspakete. Diese könnten weiter untergliedert werden in einzelne Vorgänge. Auf eine weitere Detaillierung wurde hier allerdings verzichtet, da der Detailgrad der Arbeitspakete für eine klare Terminplanung ausreichend ist. 
+Die für das Projekt ermittelte Vorgangsliste ist in \ref{tab:vorgangsliste} dargestellt. Jeder Vorgang ist hierbei durch den PSP-Code gekennzeichnet, bzw.  im Falle der Meilensteine durch das in \ref{tab:meilensteine} definierte Meilensteinkürzel.
 
 \begin{figure}
 \includegraphics [width=\linewidth,height= 22 cm]{Bilder/vorgangsliste}
@@ -423,21 +449,37 @@ Unter \rev{tab:arbeitspaket1} und \rev{tab:arbeitspaket2} sind beispielhaft zwei
 \end{figure}
 
 \section{Balkenplan}
+Um sich einen schnellen Überblick über das Projekt und seinen kritischen Pfad zu verschaffen eignet sich eine grafische Darstellung der Vorgangsliste (s. \ref{tab:vorgangsliste}).
+Aufgrund der schlechten Darstellbarkeit eines übersichtlichen Netzplanes im Din A4 Format wurde an dieser Stelle der vernetzte Balkenplan zur Visualisierung gewählt.
+Der für das Projekt  ''Umlage 2010 - EPBB''  errechnete Balkenplan ist in der Abbildung \ref{abb:balkenplan} dargestellt.
+
 
 \begin{figure}
-\includegraphics[width=\linewidth]{Bilder/balkenplan}
+\includegraphics[width=\linewidth,height= 22 cm]{Bilder/balkenplan}
 \caption{Vernetzter Balkenplan}
 \label{abb:balkenplan}
 \end{figure}
 
 \chapter{Einsatzmittel- /Kostenplanung}
-\section{Einsatzmittelbedarf / Einsatzmittelplan}
+Bei der Einsatzmittel- und Kostenplanung gilt es das bereits durch die Terminplanung (s. \ref{chap:terminplanung}) zeitlich strukturierte Projekt mit den real Verfügbaren Ressourcen in Einklang zu bringen. Ressourcen lassen sich hierbei unterscheiden in Personal, Material, Sach- und Finanzmittel. \\
+Für die Einsatzmittelplanung muss auf Basis des PSPs (\ref{cahp:psp}) der Ressourcenbedarf für die einzelnen Arbeitspakete ermittelt werden. Werden diese Bedarfe mit der Terminplanung gekreuzt ergeben sich die benötigten Ressourcen je Zeitraum. Diese gilt es anschließend mit den vorhandenen Kapazitäten in Einklang zu bringen. \\
+Abschließend werden bei der Kostenplanung ermittelt wann welche Kosten für Material, Personal, Sachmittel und Kapitel im Projektverlauf anfallen und welche Gesamtkosten das Projekt haben wird.   
 
-\begin{figure}
-\includegraphics[width=\linewidth]{Bilder/ressourcen}
-\captionof{table}{Einsatzmittel}
-\label{abb:ressourcen}
-\end{figure}
+\section{Einsatzmittelbedarf}
+\label{sec:bedarf}
+Für die Ermittlung der Einsatzmittel im Projekt ''Umlage 2010 - EPBB'' werden zu erst die Einsatzmittelarten festgelegt. Allgemein werden sowohl Personen- als auch Sachmittel benötigt. Unter die Sachmittel fallen z.B. Server, Testumgebungen oder Laptops. Diese stehen allerdings dem Projekt ''Phoenics'' bereits alle in ausreichender Kapazität zur Verfügung und müssen nach Rücksprache mit dem Entwicklungsleiter ebenfalls nicht als Kosten für das Projekt verbucht werden. Daher werden im Weiteren Sachmittel nicht weiter beachtet, sondern lediglich die Arten und Kapazitäten der benötigten Personen ermittelt. \\
+Die für die Arbeitspakete erforderlichen Personen lassen sich nach den benötigten Fähigkeiten unterscheiden in die in folgende Rollen:
+\begin{description}
+\item[Projektleiter (PL)]  Der Projektleiter muss über eine hohe Fach-, Methoden- und Sozialkompetenz verfügen. Er plant, steuert und überwacht das Projekt.
+\item[Software-Architekt (SA)] Der Software-Architekt ist nach Pro3 zuständig für das Design von Neuentwicklungen und Anpassungen. Er verfügt über sehr gute technische und Kommunikative Fähigkeiten. Die Rolle wird von erfahrenen Software Entwickler besetzt die bereits mehrere Jahre im Projekt ''Phoenics'' arbeiten. Er wird für das Design der Neuentwicklung benötigt.
+\item[Tester (TT)] Der Tester ist nach Pro3 zuständig für die Qualitätssicherung der bestehenden und neuentwickelten Software. Er kennt sich mit Testtechniken und Methoden aus und verfügt über ein sehr gutes und am besten übergreifendes Fachwissen. Wird zum internen Test der Neuentwicklung benötigt.
+\item[Betriebler (BE)] Kennt sich mit Betrieb der Software ''Phoenics'' aus und dem aufsetzen von jeweils benötigten Umgebungen. Wird zum Aufsetzen von überwachen von allen erforderlichen Umgebungen benötigt. 
+\item[Entwickler Beitrag (EB)] Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Beitrag auskennt. Wird sowohl zur Neuentwicklung der Kundenanfordeurng, als auch zum Bugfixing dieser und des bestehenden Systems benötigt. 
+\item[Entwickler Dokumentensystem (ED)] Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Dokumentensystem auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
+\item[Entwickler Zahlungswesen (EZ)]  Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Zahlungswesen auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
+\end{description}
+
+Die ermittelte Zuordnung von Einsatzmittelarten zu Arbeitspaketen ist der Tabelle \ref{tab:vorgang_ressourcen} zu entnehmen.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{Bilder/vorgang_ressourcen}
@@ -445,12 +487,36 @@ Unter \rev{tab:arbeitspaket1} und \rev{tab:arbeitspaket2} sind beispielhaft zwei
 \label{abb:vorgang_ressourcen}
 \end{figure}
 
+Nach der Zuordnung von Einsatzmittelarten zu den jeweiligen Arbeitspaketen des aufgestellten PSPs \ref{abb:psp} werden die Aufwände für diese geschätzt. Hierzu wird nach dem Vorgehensmodell Pro3 ein dreistufige Expertenschätzung durchgeführt. Der für das einzelne Arbeitspaket verantwortliche Projektmitarbeiter schätzt seinen benötigten Aufwand in Stunden und erfasst diesen in dem dafür vorgesehenen ''Schätzsheet''. Diese Schätzung wird durch einen anderen Projektmitarbeiter begutachtet und bewertet. In einem abschließenden ''Schätzmeeting'' äußern sich sowohl Schätzer als auch Gutachter zu der Schätzung und ein finaler Aufwandswert wird festgelegt. \\
+Mittels dieses Prozesses werden alle Arbeitspakete nach Aufwand in Stunden bewertet.
+\\
+\\
+Ausgehend von dem aufgestellten Terminplan \ref{abb:balkenplan} und dem ermittelten Aufwand ergeben sich die in Abbildung \ref{abb:einsatzmittel} dargestellte Anzahl von benötigten Personen nach Rollen. Hierbei wird von einer 40 Stunden Woche ausgegangen und einer maximalen Verfügbarkeit der Mitarbeiter für das Projekt von 100\%. Die vollständige Verfügbarkeit wurde von dem Entwicklungsleiter zugesichert und ergibt sich aus der hohen Priorität des Projektes. \\
+Die Auswahl der konkreten Mitarbeiter für die jeweiligen Rollen erfolgt durch den Projektleiter.
+
+
+\begin{figure}
+\includegraphics[width=\linewidth]{Bilder/einsatzmittel}
+\captionof{table}{Einsatzmittel und Projektrollen}
+\label{abb:einsatzmittel}
+\end{figure}
+
 \section{Projektkosten}
+Für die Ermittlung der Projektkosten können sowohl die Sachmittelkosten (s.o.) als auch die Kosten die auf der Seite der BG Bau durch den Abnahmetest anfallen abgegrenzt werden, da sie nach Vereinbarung nicht auf die Kostenstelle des Projektes verbucht werden. \\
+Hierdurch ergeben sich zwei verschiedene Kostenarten: 
+
+\begin{description}
+\item[Personenkosten] Die Kosten für die in \ref{sec:bedarf} ermittelten Personen ergeben sich aus deren Stundensätzen multipliziert mit den zu erbringenden Projektstunden. Die Stundensätze sind in der Tabelle \ref{tab:stundensaetze} aufgelistet und fallen mit jeder geleisteten Stunde an. Die Personenkosten belaufen sich auf XXXXXX ?.
+\item[Risikokosten] Die Kosten für die in der Risikoanalyse ermittelten durchzuführenden Maßnahmen (s. \ref{tab:risiken_massnahmen} ). Sie werden bereits nach dem Kick-Off fällig und belaufen sich auf insgesamt 22000 ?.
+\end{description}
+
+Die Kosten werden jeweils den einzelnen Arbeitspaketen in der Tabelle \ref{tab:kosten} zugeordnet und ergeben sich aus der Summe der Risikokosten und der personalkosten und belaufen sich demnach auf XXXXX ?.\\
+Anschaulich darstellen lassen sich die Kosten und damit der Finanzmittelbedarf durch die Kostengangslinie \ref{abb:kostengang} und die Kostensummenlinie \ref{acc:kostensumme}.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{Bilder/kosten}
 \captionof{table}{Zuordnung Kosten zu Vorgangsliste}
-\label{abb:kosten}
+\label{tab:kosten}
 \end{figure}
 
 \begin{figure}
@@ -466,11 +532,50 @@ Unter \rev{tab:arbeitspaket1} und \rev{tab:arbeitspaket2} sind beispielhaft zwei
 \end{figure}
 
 \chapter{Verhaltenskompetenz}
-\section{Konflikte und Krisen}
-\section{Ergebnisorientierung}
+Viele Projekte scheitern nicht an den ''harten'' Themenkomplexen wie technischem Know-How, sondern an ''weichen'' Faktoren wie der fehlender Kommunikation oder zwischen menschlichen Konflikten im Projektteam. Daher genügt es nicht wenn ein Projektleiter über ein hervorragendes Wissen und Erfahrung in den technischen Kompetenzelementen verfügt, sondern er muss auch die sozialen Vorraussetzungen für ein erfolgreiches Projekt schaffen können. Er muss damit auch Fertigkeiten in den ''Verhaltenskompetenzen'' besitzen. Diese sind während der gesamten Projektlaufzeit in unterschiedlichen Ausmaßen gefordert. \\
+Beispielhaft werden in  \ref{sec:kreativitaet} und \ref{sec:ergebnisorientierung} zwei dieser Kompetenelemente vorgestellt.  
 
-\chapter{Verhaltenskompetenz}
-\section{Berichtswesen, Projektdokumentation}
+\section{Kreativität}
+Ein Problem lässt sich definieren als eine Aufgabe deren Lösung nicht offensichtlich ist. Dieses hat zur Folge das eine Lösung erst gefunden werden muss, hierzu ist immer ein Maß an Kreativität erforderlich. \\
+Da nicht nur das Projekt selber immer ein Problem beinhaltet sondern sich auch  während des Projektverlaufes neue fortwährend neue Probleme auftun die es zu lösen gilt ist die Kreativität ein wesentlicher Bestandteil eines jeden Projektes.   
+\\
+\\
+Hierbei gilt es für den Projektleiter ein Umfeld zu etablieren das Kreativität fördert aber ein zielgerichtetes Vorgehen nicht außer acht lässt. Der Grad an erforderlicher Kreativität ist hierbei unter anderem abhängig von der Art des Projektes, so ist jedes Innovationsprojekt ohne eine kreative Umgebung zum Scheitern verurteilt. \\
+Kreativ können hierbei sowohl Einzelpersonen als auch das Projektteam als ganzes sein, beide Formen müssen durch den Projektleiter angeregt, kanalisiert und moderiert werden. \\
+Förderlich dabei ist die Vermeidung von Keativitätsblockaden, diese lassen sich unterscheiden in:
+
+\begin{description}
+\item[Wahrnehmungsblockade] Es wird nicht der gesamte Lösungsraum betrachtet, sondern nur ein sehr geringer Teil. Eine typische Folge ist die Auswahl der ''erst besten'' Lösung .
+\item[Blockaden der Ausdrucksfähigkeit] Kreative Ideen können nicht vermittelt werden. DIe betroffene Person wird von ihrer Umgebung als nicht kreativ wahrgenommen, was zu einer weiterenVerstärkung der Ausdrucksfähigkeit führen kann.
+\item[Umweltbedingte Blockaden] Die bekannteste der Blockadearten. Ein Individuum wir in seiner Kreativität durch seine Umgebung beeinträchtigt. Typische Beispiele sind Bürokratie, Zeitdruck oder Nichtanerkennung.  
+\end{description}
+
+Neben der Vermeidung von Blockaden kann der Projektleiter und sein Team durch die Einhaltung eines kreativen Prozesses zu besseren Lösungen kommen.
+Ein typischer Prozess lässt sich hierbei in die folgenden Phasen untergliedern:
+\begin{enumerate}
+\item Präperation: Das zu lösende Problem wird definiert, beschrieben undanalysiert.
+\item Inkubation: Es wird eine ''Brutzeit'' eingeräumt, in der die Teilnehmer das beschriebene Problem erst einmal ''sacken'' lassen.
+\item Illumination: Es werden spontane Lösungsideen gesammelt ohne diese zu bewerten.
+\item Verifikation: Die gefundenen Ideen werden bewertet und die es wir eine Lösung ausgewählt.
+ \end{enumerate}
+
+Dieser Prozess kann durch mehrere Kreativitätstechniken unterstützt werden. Einige dieser Techniken sind unter anderem: 
+\begin{description}
+\item[Brainstorming]  
+
+
+
+\label{sec:krativitaet}
+
+\section{Ergebnisorientierung}
+\label{sec:ergebnisorientierung}
+
+\chapter{Berichtswesen, Projektdokumentation}
+
+
+% Abkürzungsverzeichnis
+
+% Glossar
 
 % Abbildungsverzeichnis
    % \clearpage
