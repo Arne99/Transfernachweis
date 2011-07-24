@@ -1,0 +1,58 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{Bau}{\glsnamefont{Bau}}{Berufsgenossenschaft der Bauwirtschaft}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimR 4}\delimN 
+		\setentrycounter{page}\glsnumberformat{6}\delimN 
+		\setentrycounter{page}\glsnumberformat{10}\delimN 
+		\setentrycounter{page}\glsnumberformat{39}\delimN 
+		\setentrycounter{page}\glsnumberformat{49}\delimN 
+		\setentrycounter{page}\glsnumberformat{51\delimN 52}}}%
+\glossaryentryfield{BG}{\glsnamefont{BG}}{Berufsgenossenschaft}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimR 4}\delimN 
+		\setentrycounter{page}\glsnumberformat{6}\delimN 
+		\setentrycounter{page}\glsnumberformat{10}\delimN 
+		\setentrycounter{page}\glsnumberformat{13}\delimN 
+		\setentrycounter{page}\glsnumberformat{39}\delimN 
+		\setentrycounter{page}\glsnumberformat{49}\delimN 
+		\setentrycounter{page}\glsnumberformat{51\delimN 52}}}%
+\glossaryentryfield{BV}{\glsnamefont{BV}}{Bezirksverwaltung}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{10}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{EPBB}{\glsnamefont{EPBB}}{Ein Phoenics für die BG Bau}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimN 3}\delimN 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{20}\delimN 
+		\setentrycounter{page}\glsnumberformat{24}\delimN 
+		\setentrycounter{page}\glsnumberformat{27}\delimN 
+		\setentrycounter{page}\glsnumberformat{31}\delimN 
+		\setentrycounter{page}\glsnumberformat{35}\delimN 
+		\setentrycounter{page}\glsnumberformat{38}\delimN 
+		\setentrycounter{page}\glsnumberformat{46}\delimN 
+		\setentrycounter{page}\glsnumberformat{48\delimN 49}\delimN 
+		\setentrycounter{page}\glsnumberformat{51\delimN 52}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{MSG}{\glsnamefont{MSG}}{MSG Systems AG}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimN 3}\delimN 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{20}\delimN 
+		\setentrycounter{page}\glsnumberformat{27}\delimN 
+		\setentrycounter{page}\glsnumberformat{49}\delimN 
+		\setentrycounter{page}\glsnumberformat{52}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{PAG}{\glsnamefont{PAG}}{Projektauftraggeber}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{48}}}%
+\glossaryentryfield{PM}{\glsnamefont{PM}}{Projektmanagment}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{27}}}%
+\glossaryentryfield{PSP}{\glsnamefont{PSP}}{Projektstrukturplan}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{31}\delimN 
+		\setentrycounter{page}\glsnumberformat{35}\delimN 
+		\setentrycounter{page}\glsnumberformat{38\delimN 39}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{RUP}{\glsnamefont{RUP}}{Rational Unified Process}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{27}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{SMART}{\glsnamefont{SMART}}{Spezifisch, Messbar, Akzeptabel, Realistisch, Terminiert}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{5}}}%
+\end{theglossary}\glossarypostamble

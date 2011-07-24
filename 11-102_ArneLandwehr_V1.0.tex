@@ -19,14 +19,63 @@
 
 \makeglossaries
 
-\newglossaryentry{perl}{name=Perl,
-description=A scripting language}
+\newglossaryentry{Bezirksverwaltungen}{name=Bezirksverwaltungen,
+description={ Standorte einer Berufsgenossenschaft die jeweils für eine bestimmtes Gebiet in Deutschland zuständig sind.}}
 
-\newglossaryentry{elite}{name={Elite},
-description={select group or class}}
+\newglossaryentry{Lohnsummen}{name=Lohnsummen,
+description={ Die Summe an Gehalt die ein Unternehmen allen seinen Mitarbeitern in einem Jahr bezahlt, dient als Grundlage für die Versicherungssumme die der Unternehmer an die Berufsgenossenschaft zahlen muss}}
+
+\newglossaryentry{Berufsgenossenschaft}{name=Berufsgenossenschaft,
+description={ Die gewerblichen Berufsgenossenschaften sind die Träger der gesetzlichen Unfallversicherung für die Unternehmen der deutschen Privatwirtschaft und deren Beschäftigte}}
+
+\newglossaryentry{Umlage}{name=Umlage,
+description={ Das Umlageverfahren ist eine Methode zur Finanzierung von Sozialversicherungen, speziell der Altersvorsorge, aber auch von Krankenversicherung und Arbeitslosenversicherung. Die eingezahlten Beiträge werden unmittelbar für die Finanzierung der erbrachten Leistungen herangezogen.}}
+
+\newglossaryentry{Mitglieder}{name=Mitglieder,
+description={ Die bei einer Berufsgenossenschaft pflichtversicherten Unternehmen.}}
+
+\newglossaryentry{Gefahrklassen}{name=Gefahrklassen,
+description={ Jedes bei einer BG versicherte Unternehmen bekommt eine Gefahrklasse. Diese bestimmt wie wahrscheinlich ein Arbeitsunfall in diesem unternehmen ist und stellt einen Faktor für den Versicherungsbeitrag dar.}}
+
+\newglossaryentry{Phoenics}{name=Phoenics,
+description={ Name der Software die die Prozesse einer Berufsgenossenschaft abbildet und bei der BG Bau eingesetzt wird. Ebenfalls Name des Projektes das die Software Phoenics einführt und wartet.}}
+
+\newglossaryentry{Laufzeit}{name=Laufzeit,
+description={ Die Zeit die ein Batch von seinem Start bis zu seinem Ende benötigt.}}
+
+\newglossaryentry{Batch}{name=Batch,
+description={ Software die nach ihrem Start automatisch bestimmte Aufgaben erledigt.}}
+
+\newglossaryentry{Integration}{name=Integration,
+description={ Bezeichnung für das Zusammenführen von verschiedenen Softwarekomponenten zu einem System.}}
+
+\newglossaryentry{Abnahmeumgebungen}{name=Abnahmeumgebungen,
+description={ Bezeichnung für die Computer mit laufenden Phoenics Installation auf denen der Abnahmetest durchgeführt wird}}
+
+\newglossaryentry{Testumgebungen}{name=Testumgebungen,
+description={ Bezeichnung für die Computer mit laufenden Phoenics Installation auf denen der Test durchgeführt wird}}
+
+\newglossaryentry{Profi}{name=Profi,
+description={Vorgehensmodell der MSG Systems AG, basiert auf dem Rational Unified Process}}
+
+\newglossaryentry{Pro3}{name=Pro3,
+description={Vorgehensmodell des Projektes Phoenics, basiert auf Profi}}
+
+\newglossaryentry{Entwicklernachweis}{name= Entwicklernachweis,
+description={Ein im Projekt Phoenics verwendetes Qualitätssicherungsdokument, mit dem er versichert das seine Implementierung den Qualitätsstandards genügt.}}
 
 
-\newacronym{svm}{svm}{support vector machine}
+
+\newacronym{BG}{BG}{Berufsgenossenschaft}
+\newacronym{PM}{PM}{Projektmanagment}
+\newacronym{RUP}{RUP}{Rational Unified Process}
+\newacronym{BV}{BV}{Bezirksverwaltung}
+\newacronym{Bau}{Bau}{Berufsgenossenschaft der Bauwirtschaft}
+\newacronym{EPBB}{EPBB}{Ein Phoenics für die BG Bau}
+\newacronym{MSG}{MSG}{MSG Systems AG}
+\newacronym{PAG}{PAG}{Projektauftraggeber}
+\newacronym{PSP}{PSP}{Projektstrukturplan}
+\newacronym{SMART}{SMART}{Spezifisch, Messbar, Akzeptabel, Realistisch, Terminiert}
 
 \begin{document}
 
@@ -56,50 +105,50 @@ description={select group or class}}
 \end{figure}
 
 \chapter{Projekt/ Projektziele}
-In diesem ersten Kapitel wird unter \ref{sec:beschreibung}  das in diesem Transfernachweis vorgestellte Projekt  ''Umlage 2010 - EPBB'' erläutert und sowohl der Kunde als auch die MSG Systems AG als das Projekt durchführende Unternehmen näher beleuchtet. Neben den beiden beteiligten Partnern wird kurz die Beziehung zueinander dargestellt um den Kontext des Projektes zu umreißen. Aufbauend auf diesem Überblick werden in \ref{sec:ziele} die Projektziele strukturiert dargestellt um die Erwartungen der BG Bau an die MSG Systems klar zu fixieren und den Projektauftrag zu definieren. 
+In diesem ersten Kapitel wird unter \ref{sec:beschreibung}  das in diesem Transfernachweis vorgestellte Projekt  ''\gls{Umlage} 2010 - \gls{EPBB}'' erläutert und sowohl der Kunde als auch die \gls{MSG} als das Projekt durchführende Unternehmen näher beleuchtet. Neben den beiden beteiligten Partnern wird kurz die Beziehung zueinander dargestellt um den Kontext des Projektes zu umreißen. Aufbauend auf diesem Überblick werden in \ref{sec:ziele} die Projektziele strukturiert dargestellt um die Erwartungen der \gls{Bau} an die \gls{MSG} Systems klar zu fixieren und den Projektauftrag zu definieren. 
 
 
 \section{Projektbeschreibung}
 \label{sec:beschreibung}
-Die \textbf{Berufsgenossenschaft der Bauunternehmen}, im Weiteren als BG BAU abgekürzt, ist die gesetzliche Unfallversicherung für die Bauwirtschaft. Sie ist wie die Kranken- und Rentenversicherung eine Säule im deutschen Sozialversicherungssystem und ist als Körperschaft des öffentlichen Rechts in Selbstverwaltung organisiert. Ihre Aufgabe ist die Verhütung von Arbeitsunfällen und Berufskrankheiten im Baugewerbe. Beschäftigte der versicherten Bauunternehmen, die einen Arbeitsunfall erlitten haben werden durch die BG BAU medizinisch, beruflich und sozial rehabilitiert. Finanziert wird die BG durch die Beiträge der ihr durch eine Pflichtmitgliedschaft zugewiesenen Unternehmen. Die BG Bau besaß 2009 488.146 Mitglieder (Unternehmen und Bauherren) und versicherte damit  2.612.60 Personen. Die Umlage 2009 besaß ein Volumen von 1,47 Mrd. Euro.    
+Die \textbf{\gls{Berufsgenossenschaft} der \gls{Bau}unternehmen}, im Weiteren als \gls{BG} \gls{Bau} abgekürzt, ist die gesetzliche Unfallversicherung für die Bauwirtschaft. Sie ist wie die Kranken- und Rentenversicherung eine Säule im deutschen Sozialversicherungssystem und ist als Körperschaft des öffentlichen Rechts in Selbstverwaltung organisiert. Ihre Aufgabe ist die Verhütung von Arbeitsunfällen und Berufskrankheiten im Baugewerbe. Beschäftigte der versicherten Bauunternehmen, die einen Arbeitsunfall erlitten haben werden durch die \gls{BG} \gls{Bau} medizinisch, beruflich und sozial rehabilitiert. Finanziert wird die \gls{BG} durch die Beiträge der ihr durch eine Pflichtmitgliedschaft zugewiesenen Unternehmen. Die \gls{BG} \gls{Bau} besaß 2009 488.146 \gls{Mitglieder} (Unternehmen und Bauherren) und versicherte damit  2.612.60 Personen. Die \gls{Umlage} 2009 besaß ein Volumen von 1,47 Mrd. Euro.    
 \\
-Die Höhe der Beiträge wird durch eine jährliche Umlage bestimmt. Bei dieser werden die Ausgaben der Berufsgenossenschaft auf alle Mitglieder, gewichtet nach den jeweiligen Lohnsummen und Gefahrklassen (Unfallrisiko bei dem Unternehmen), verteilt. Am Ende eines Umlagelaufes werden die Abrechnungsbescheide und Vorschussbescheide an die Unternehmen verschickt.  
-\\
-\\
-Seit 2005 arbeitet die BG Bau mit der Software ''Phoenics'', die von der MSG Sytems AG als Großprojekt gewartet und weiterentwickelt wird und praktisch alle Geschäftsprozesse abdeckt.Ein Teil der Software ist das Umlagesystem, hierbei handelt es sich um drei Batches, die nacheinander laufen müssen und die Umlage einer Berufsgenossenschaft automatisieren.  
-\\
-Die BG Bau besteht aus 8 Bezirksverwaltungen, die bis zum Jahre 2010 praktisch autonom arbeiteten und jeweils ein autonomes Phoenics System besaßen. Aufgrund eines Beschlusses des Gesetzgebers  wurde die Autonomie der Bezirksverwaltungen eingeschränkt und die Struktur vereinheitlicht. Hierzu wurden alle bisher autonomen Phoenics Systeme von der MSG Systems in ein zentrales Phoenics System migriert und die Software entsprechend angepasst. Das damalige Zusammenlegungs-Projekt wurde als ''EPBB'' (\underline{E}in \underline{P}hoenics \underline{B}G \underline{B}au) bezeichnet.
+Die Höhe der Beiträge wird durch eine jährliche \gls{Umlage} bestimmt. Bei dieser werden die Ausgaben der \gls{Berufsgenossenschaft} auf alle \gls{Mitglieder}, gewichtet nach den jeweiligen \gls{Lohnsummen} und \gls{Gefahrklassen} (Unfallrisiko bei dem Unternehmen), verteilt. Am Ende eines \gls{Umlage}laufes werden die Abrechnungsbescheide und Vorschussbescheide an die Unternehmen verschickt.  
 \\
 \\
-Noch offen ist die Erweiterung des Umlagesystems der Software im Zuge von EPBB für die Umlage 2010 ( im Jahre 2011). Die Erweiterung der Software wird von der BG Bau als höchst kritisch eingestuft. Die Umlage ist das ''Highlight'' des Jahres in einer BG und beschert ihr einen Großteil ihrer Einnahmen. Die Software ist aktuell (01.01.2011) nicht in einer zentralen Umgebung lauffähig und der für die Umlage angesetzte Starttermin kann aufgrund von rechtlichen Bedingungen nicht verschoben werden.
+Seit 2005 arbeitet die \gls{BG} \gls{Bau} mit der Software ''\gls{Phoenics}'', die von der \gls{MSG} Sytems AG als Großprojekt gewartet und weiterentwickelt wird und praktisch alle Geschäftsprozesse abdeckt.Ein Teil der Software ist das \gls{Umlage}system, hierbei handelt es sich um drei \gls{Batch}es, die nacheinander laufen müssen und die \gls{Umlage} einer \gls{Berufsgenossenschaft} automatisieren.  
+\\
+Die \gls{BG} \gls{Bau} besteht aus 8 \gls{Bezirksverwaltungen}, die bis zum Jahre 2010 praktisch autonom arbeiteten und jeweils ein autonomes \gls{Phoenics} System besaßen. Aufgrund eines Beschlusses des Gesetzgebers  wurde die Autonomie der \gls{Bezirksverwaltungen} eingeschränkt und die Struktur vereinheitlicht. Hierzu wurden alle bisher autonomen \gls{Phoenics} Systeme von der \gls{MSG} Systems in ein zentrales \gls{Phoenics} System migriert und die Software entsprechend angepasst. Das damalige Zusammenlegungs-Projekt wurde als ''\gls{EPBB}'' (\underline{E}in \underline{P}hoenics \underline{B}G \underline{B}au) bezeichnet.
 \\
 \\
-Die \textbf{MSG Systems AG}  gehört mit über 3000 Mitarbeitern 	und einem Umsatz von 364 Mio. Euro in 2010 zu den größten IT-Beratungs- und Systemintegrationsunternehmen in Deutschland.  Die Firma wurde 1980 in München gegründet und ihr Angebot umfasst neben branchenspezifischen Gesamtlösungen auch die Entwicklung von Individual- und Standardsoftware. Kernkompetenz der MSG sind IT-Dienstleistungen für die Versicherungsbranche (Erst- und Rückversicherer), die Automobilindustrie sowie die Finanzdienstleister. Die Firma übernimmt vor allem im Versicherungsbereich mehrheitlich Großprojekte mit einer Laufzeit von mehreren Jahren.  
+Noch offen ist die Erweiterung des \gls{Umlage}systems der Software im Zuge von \gls{EPBB} für die \gls{Umlage} 2010 ( im Jahre 2011). Die Erweiterung der Software wird von der \gls{BG} \gls{Bau} als höchst kritisch eingestuft. Die \gls{Umlage} ist das ''Highlight'' des Jahres in einer \gls{BG} und beschert ihr einen Großteil ihrer Einnahmen. Die Software ist aktuell (01.01.2011) nicht in einer zentralen Umgebung lauffähig und der für die \gls{Umlage} angesetzte Starttermin kann aufgrund von rechtlichen Bedingungen nicht verschoben werden.
 \\
 \\
-Die MSG Systems übernahm die Entwicklung und Wartung der Software ''Phoenics'' im Jahr 2005 von der Firma Plenum, der das Vertrauen des Kunden entzogen wurde.
-Die Pflege des Softwaresystems ist von der MSG Systems aus als Großprojekt aufgesetzt und organisiert (s. \ref{sec:organisation}). Zur Zeit arbeiten für das Projekt ca. 150 ( in den Bereichen: Entwicklung, Test, Produktmanagment, Betrieb und Managment) Personen. Hiervon sind ca. 60 Mitarbeiter direkt bei der MSG angestellt und 90 Mitarbeiter sind Angestellte der BG Bau, die für das Projekt abgestellt wurden. Das Projekt besitzt einen Gesamtumsatz von ca. 40 Millionen Euro pro Jahr, wobei es sich um ein Aufwandsprojekt handelt. 
+Die \textbf{\gls{MSG} Systems AG}  gehört mit über 3000 Mitarbeitern 	und einem Umsatz von 364 Mio. Euro in 2010 zu den größten IT-Beratungs- und Systemintegrationsunternehmen in Deutschland.  Die Firma wurde 1980 in München gegründet und ihr Angebot umfasst neben branchenspezifischen Gesamtlösungen auch die Entwicklung von Individual- und Standardsoftware. Kernkompetenz der \gls{MSG} sind IT-Dienstleistungen für die Versicherungsbranche (Erst- und Rückversicherer), die Automobilindustrie sowie die Finanzdienstleister. Die Firma übernimmt vor allem im Versicherungsbereich mehrheitlich Großprojekte mit einer Laufzeit von mehreren Jahren.  
 \\
 \\
-\label{mark:projektauftrag} In diesem Kontext erging von der  BG Bau folgender \textbf{Projektauftrag} an die MSG Systems AG:
-Das Umlagesystem ist für die Umlage 2010 zu erweitern und zu testen und die Funktionsfähigkeit sicher bzw. wiederherzustellen. Die Abnahmetests des Kunden und der produktive Lauf müssen durch die Entwicklungsabteilung der MSG begleitet und unterstützt werden.
+Die \gls{MSG} Systems übernahm die Entwicklung und Wartung der Software ''\gls{Phoenics}'' im Jahr 2005 von der Firma Plenum, der das Vertrauen des Kunden entzogen wurde.
+Die Pflege des Softwaresystems ist von der \gls{MSG} Systems aus als Großprojekt aufgesetzt und organisiert (s. \ref{sec:organisation}). Zur Zeit arbeiten für das Projekt ca. 150 ( in den Bereichen: Entwicklung, Test, Produktmanagment, Betrieb und Managment) Personen. Hiervon sind ca. 60 Mitarbeiter direkt bei der \gls{MSG} angestellt und 90 Mitarbeiter sind Angestellte der \gls{BG} \gls{Bau}, die für das Projekt abgestellt wurden. Das Projekt besitzt einen Gesamtumsatz von ca. 40 Millionen Euro pro Jahr, wobei es sich um ein Aufwandsprojekt handelt. 
 \\
 \\
-Hierzu wurde von dem Entwicklungsleiter der MSG, Herrn Jürgen Weiss, das Projekt ''Umlage 2010 - EPBB'' aufgesetzt, das Gegenstand dieses Transfernachweises ist. 
+\label{mark:projektauftrag} In diesem Kontext erging von der  \gls{BG} \gls{Bau} folgender \textbf{Projektauftrag} an die \gls{MSG} Systems AG:
+Das \gls{Umlage}system ist für die \gls{Umlage} 2010 zu erweitern und zu testen und die Funktionsfähigkeit sicher bzw. wiederherzustellen. Die Abnahmetests des Kunden und der produktive Lauf müssen durch die Entwicklungsabteilung der \gls{MSG} begleitet und unterstützt werden.
 \\
-Die weitere Arbeit ist aus Sicht des Projektmanagers geschrieben der von seiner Firma, der MSG Systems AG, über den Projektauftraggeber Herrn Jürgen Weiss  beauftragt wurde, das Projekt ''Umlage 2010 - EPBB'' erfolgreich durchzuführen.   
+\\
+Hierzu wurde von dem Entwicklungsleiter der \gls{MSG}, Herrn Jürgen Weiss, das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' aufgesetzt, das Gegenstand dieses Transfernachweises ist. 
+\\
+Die weitere Arbeit ist aus Sicht des Projektmanagers geschrieben der von seiner Firma, der \gls{MSG} Systems AG, über den Projektauftraggeber Herrn Jürgen Weiss  beauftragt wurde, das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' erfolgreich durchzuführen.   
  
 \section{Zielbeschreibung}
 \label{sec:zielbeschreibung}
-Ausgehend von dem erteilten Projektauftrag (s. \ref{mark:projektauftrag}) der BG Bau müssen zusammen mit dem Auftraggeber die konkreten Projektziele ermittelt werden. Hierbei wird das im Projektauftrag enthaltene Primärziel ''Automatisierung der Umlage 2010 der BG Bau'' in weitere Unterziele unterteilt. Eine Unterteilung kann sowohl in ''Ergebnis- /Vorgehensziele'' erfolgen als auch in die Kategorien ''Kosten- / Leistungs- / Termin- / Sozialeziele''. \\
-Im Einverständnis mit der BG Bau wird hier die zweite Kategorisierung angewandt, da sie die ermittelten Unterziele konkreter gliedert. 
+Ausgehend von dem erteilten Projektauftrag (s. \ref{mark:projektauftrag}) der \gls{BG} \gls{Bau} müssen zusammen mit dem Auftraggeber die konkreten Projektziele ermittelt werden. Hierbei wird das im Projektauftrag enthaltene Primärziel ''Automatisierung der \gls{Umlage} 2010 der \gls{BG} \gls{Bau}'' in weitere Unterziele unterteilt. Eine Unterteilung kann sowohl in ''Ergebnis- /Vorgehensziele'' erfolgen als auch in die Kategorien ''Kosten- / Leistungs- / Termin- / Sozialeziele''. \\
+Im Einverständnis mit der \gls{BG} \gls{Bau} wird hier die zweite Kategorisierung angewandt, da sie die ermittelten Unterziele konkreter gliedert. 
 Die ermittelten Projektziele sind unterteilt nach den Kategorien in Abbildung \ref{abb:zielbaum} dargestellt. 
 \begin{figure}[h]
 \includegraphics [width=\linewidth]{Bilder/ziele_baum}
 \caption{Zielhierarchie}
 \label{abb:zielbaum}
 \end{figure}
-Um den Erfolg des Projektes nach seinem Abschluss bestimmen zu können, werden die Ziele ''SMART'' (\underline{S}pezifisch, \underline{M}essbar, \underline{A}kzeptabel, \underline{R}ealistisch, \underline{T}erminiert) beschrieben und anschließend mit dem Auftraggeber priorisiert.
+Um den Erfolg des Projektes nach seinem Abschluss bestimmen zu können, werden die Ziele ''\gls{SMART}'' beschrieben und anschließend mit dem Auftraggeber priorisiert.
 Einen Überblick über alle Ziele, ihre Messgrößen und die vorgenommene Priorisierung bietet die Tabelle\ref{tab:ziele_liste}.
 \\
 \\
@@ -121,10 +170,10 @@ Zielbeziehungen lassen sich charakterisieren nach:
 
 Im Weiteren sind anhand von drei Beispielen zu den in der Zielbeziehungsmatrix \ref{tab:zielbeziehungen} aufgelisteten Zielen die Zielbeziehungen dargestellt:
  \begin{enumerate}
- \item Die Ziele ''Laufzeit <= 56 Stunden (10)''  und ''Umlagelauf im Zeitfenster (3)'' sind komplementär zueinander.\\
- Wird die Laufzeit des Umlagebatches auf unter 56 Stunden gebracht steigert dieses die Chancen, das vorgeschriebene Zeitfenster nicht zu reißen. Es besteht keine Zielidentität, da 
+ \item Die Ziele ''\gls{Laufzeit} <= 56 Stunden (10)''  und ''\gls{Umlage}lauf im Zeitfenster (3)'' sind komplementär zueinander.\\
+ Wird die \gls{Laufzeit} des \gls{Umlage}\gls{Batch}es auf unter 56 Stunden gebracht steigert dieses die Chancen, das vorgeschriebene Zeitfenster nicht zu reißen. Es besteht keine Zielidentität, da 
  das Zeitfenster z.B. auch durch eine zu lange manuelle Qualitätskontrolle gerissen werden kann.
- \item Die Ziele ''Sozialer Bereitschaftsplan erstellt (14)'' und 'Alle verschickten Dokumente mit BG Bau Bezug (7)''
+ \item Die Ziele ''Sozialer Bereitschaftsplan erstellt (14)'' und 'Alle verschickten Dokumente mit \gls{BG} \gls{Bau} Bezug (7)''
  sind neutral zueinander.\\
  Weder das Ziel 14 noch das Ziel 7 haben durch ihre Erfüllung oder Nichterfüllung eine Auswirkung auf das andere.
  \item  Die Ziele ''Freigabe der Implementierung am 15.03.2011(12)'' und ''Keine Mitarbeiterüberlastung vorhanden'' stehen in Konkurrenz zueinander.\\
@@ -145,14 +194,14 @@ Projekte bewegen sich nicht in einem leeren Raum, sondern werden immer durch ihr
 Zur Erreichung der in \ref{sec:zielbeschreibung} dargestellten Ziele muss das in \ref{sec:beschreibung} bereits umrissene Projektumfeld nun genauer analysiert und strukturiert werden. Diese Analyse ist Gegenstand des folgenden Abschnittes \ref{sec:projektumfeld}.\\
 Die hierbei ermittelten sozialen Faktoren werden als Stakeholder bezeichnet. Eine korrekte Ermittlung und Klassifizierung aller relevanten Stakeholder ist essenziell für das Erreichen der Projektziele und erfolgt in \ref{sec:stakeholder}.   
 \section{Umfeldfaktoren}
-Die Umfeldanalyse für das Projekt 'Umlage 2010 - EPBB''  ergab das  in Abbildng \ref{tab:projektumfeld}  dargestellte Projektumfeld. Hierbei wurden alle Umfeldfaktoren die direkt das Projektteam betreffen, als interne Faktoren und alle weiteren als externe Faktoren charakterisiert. \\ 
+Die Umfeldanalyse für das Projekt '\gls{Umlage} 2010 - \gls{EPBB}''  ergab das  in Abbildng \ref{tab:projektumfeld}  dargestellte Projektumfeld. Hierbei wurden alle Umfeldfaktoren die direkt das Projektteam betreffen, als interne Faktoren und alle weiteren als externe Faktoren charakterisiert. \\ 
 \begin{figure}
 \includegraphics [width=\linewidth]{Bilder/projektumfeld}
 \captionof{table}{Projektumfeld}
 \label{tab:projektumfeld}
 \end{figure}
 Aufgrund des komplexen Kundenumfeldes sind die meisten ermittelten Faktoren extern. Ebenfalls relevant sind die gesetzlichen Richtlinien und Verordnungen, z.B. die Arbeitsgesetze, die es trotz des knappen Terminplanes unbedingt zu beachten gilt.  
-Das eigene Projektteam wurde unterteilt in ''MSG Mitarbeiter'' und ''externe Mitarbeiter'' diese Unterteilung fand aufgrund des unterschiedlichen Konfliktpotenzials statt (s. Abb. \ref{tab:stakeholder}).
+Das eigene Projektteam wurde unterteilt in ''\gls{MSG} Mitarbeiter'' und ''externe Mitarbeiter'' diese Unterteilung fand aufgrund des unterschiedlichen Konfliktpotenzials statt (s. Abb. \ref{tab:stakeholder}).
 \\
 \\
 Die ermittelten Umfeldfaktoren sind nicht isoliert voneinander zu betrachten, sondern besitzen Schnittstellen zueinander. Die durch eine weitergehende Analyse ermittelten Schnittstellen sind in der Matrix \ref{tab:schnittstellen} aufgelistet. 
@@ -167,9 +216,9 @@ Die ermittelten Umfeldfaktoren sind nicht isoliert voneinander zu betrachten, so
 \\
 Zur Verdeutlichung werden im Weiteren drei der aufgelisteten Schnittstellen exemplarisch dargestellt:
 \begin{description}
-\item[Interne Integrationszyklen - Interne Testumgebungen]  Auf den internen Testumgebungen erfolgt der Test der Implementierung der Projektentwickler durch die Projekttester. Diese Testumgebungen werden lediglich einmal in der Woche durch eine interne Integration (der interne Integrationszyklus) neu deployed. Wird dieser Termin vom Entwickler knapp verpasst, kann dieses direkt zu einem Verzug von einer Woche führen. Ein manuelles Deployen der Umgebung ist möglich, aber fehleranfällig und zeitintensiv.
-\item[Datenschutzbestimmungen - Abnahmeumgebungen] Die Abnahmeumgebungen dienen für die abschließenden Tests der ausgelieferten Software durch den Kunden. Da die Tester des Kunden hier auf einem Abzug der Produktionsdaten testen, unterliegen sie den Datenschutzbestimmungen. Zugänge von Entwicklern auf diese Umgebungen sind deswegen nicht möglich. Bei der Planung muss deswegen berücksichtigt werden, dass das Bugfixing von Fehlern aus dieser Umgebung deutlich aufwendiger und komplexer ist.
-\item[Hauptverwaltung der BG Bau - Geschäftsführungen der BVen] Durch die Vereinheitlichung der BG Bau (s. \ref{sec:beschreibung}) wurden die früher autonom agierenden Geschäftsführungen der einzelnen Bezirksverwaltungen der Hauptverwaltung in Berlin unterstellt. Damit liegt die Entscheidungsgewalt über das Projekt (von der Seite des Kunden aus) bei der Hauptverwaltung. Aufgrund der gewachsenen Strukturen muss dieses neue Organigramm allerdings erst beim Kunden etabliert werden. Für den Projektleiter bedeutet dieses, dass er sich bei allen Entscheidungen direkt an die Hauptverwaltung wenden muss, ohne die Bezirksverwaltungen vollständig vom Informationsfluss auszugrenzen.   
+\item[Interne \gls{Integration}szyklen - Interne \gls{Testumgebungen}]  Auf den internen \gls{Testumgebungen} erfolgt der Test der Implementierung der Projektentwickler durch die Projekttester. Diese \gls{Testumgebungen} werden lediglich einmal in der Woche durch eine interne \gls{Integration} (der interne \gls{Integration}szyklus) neu deployed. Wird dieser Termin vom Entwickler knapp verpasst, kann dieses direkt zu einem Verzug von einer Woche führen. Ein manuelles Deployen der Umgebung ist möglich, aber fehleranfällig und zeitintensiv.
+\item[Datenschutzbestimmungen - \gls{Abnahmeumgebungen}] Die \gls{Abnahmeumgebungen} dienen für die abschließenden Tests der ausgelieferten Software durch den Kunden. Da die Tester des Kunden hier auf einem Abzug der Produktionsdaten testen, unterliegen sie den Datenschutzbestimmungen. Zugänge von Entwicklern auf diese Umgebungen sind deswegen nicht möglich. Bei der Planung muss deswegen berücksichtigt werden, dass das Bugfixing von Fehlern aus dieser Umgebung deutlich aufwendiger und komplexer ist.
+\item[Hauptverwaltung der \gls{BG} \gls{Bau} - Geschäftsführungen der \gls{BV}en] Durch die Vereinheitlichung der \gls{BG} \gls{Bau} (s. \ref{sec:beschreibung}) wurden die früher autonom agierenden Geschäftsführungen der einzelnen \gls{Bezirksverwaltungen} der Hauptverwaltung in Berlin unterstellt. Damit liegt die Entscheidungsgewalt über das Projekt (von der Seite des Kunden aus) bei der Hauptverwaltung. Aufgrund der gewachsenen Strukturen muss dieses neue Organigramm allerdings erst beim Kunden etabliert werden. Für den Projektleiter bedeutet dieses, dass er sich bei allen Entscheidungen direkt an die Hauptverwaltung wenden muss, ohne die \gls{Bezirksverwaltungen} vollständig vom Informationsfluss auszugrenzen.   
 \end{description}
 
 \label{sec:projektumfeld}
@@ -202,7 +251,7 @@ Folgende Maßnahmen werden ergriffen: regelmäßige Status Meetings (bereits in den
 \item[Quadrant 2 (hoch/niedrig)] Es wird eine partizipative Strategie gewählt, da es sich hier um einflussreiche Stakeholder handelt, die bereits für das Projekt gewonnen wurden, hiermit wird versucht den Zustand zu halten.\\
 Folgende Maßnahmen werden ergriffen: regelmäßige Status Meetings, Mailverteiler, Einbindung in Entscheidungsprozesse.
 \item[Quadrant 3 (niedrig niedrig)] Es wird eine restriktive Strategie ergriffen, da es sich um dem Projekt wohlgesonnene Stakeholder handelt, die bisher wenig oder keinen Einfluss haben. 
-\\Folgende Maßnahmen werden ergriffen: Da es sich um eine beträchtliche Anzahl von Personen handelt die häufig mit dem Projekt nur sehr indirekt zu tun haben (z.B. die Sachbearbeiter der BG), werden sie nicht mit in den Informationsfluss eingebunden. Sie werden lediglich nach der Beendigung des Projektes über den Erfolg per Mail informiert.
+\\Folgende Maßnahmen werden ergriffen: Da es sich um eine beträchtliche Anzahl von Personen handelt die häufig mit dem Projekt nur sehr indirekt zu tun haben (z.B. die Sachbearbeiter der \gls{BG}), werden sie nicht mit in den Informationsfluss eingebunden. Sie werden lediglich nach der Beendigung des Projektes über den Erfolg per Mail informiert.
 \item[Quadrant 4 (niedrig/hoch)] Es wird eine partizipative Strategie ergriffen, um diese Stakeholder bereits am Anfang in das Projekt mit einzubeziehen und so das Konflikpotenzial zu senken. \\
 Folgende Maßnahmen werden ergriffen: Mailverteiler. 
 \end{description}
@@ -220,11 +269,11 @@ Immer in Bezug zum Projektkontext gilt hierbei folgender Prozess:
 Ebenso wie bei Stakeholderanalyse (s. \ref{sec:stakeholder}) handelt es sich bei der Risikoanalyse nicht um eine einmalige Maßnahme im Zuge der Projektplanung, sondern um eine kontinuierlich Tätigkeit. So sollte der Projektmanager spätestens zu jedem eingetretenen Meilenstein die anfängliche Risiko- und Maßnahmenanalyse auf ihre Aktualität hin überprüfen und gegebenenfalls anpassen. 
 \\
 \\
-Im Weiteren werden in \ref{sec:risiko} die Risiken des Projektes  ''Umlage 2010 - EPBB'' identifiziert und klassifiziert, um aufbauend auf diesen Ergebnissen die Risiken in \ref{sec:massnahmen} zu bewerten und notwendige Maßnahmen zu ermitteln.
+Im Weiteren werden in \ref{sec:risiko} die Risiken des Projektes  ''\gls{Umlage} 2010 - \gls{EPBB}'' identifiziert und klassifiziert, um aufbauend auf diesen Ergebnissen die Risiken in \ref{sec:massnahmen} zu bewerten und notwendige Maßnahmen zu ermitteln.
 
 \section{Erfassung, Klassifizierung und Beschreibung von Risiken}
 \label{sec:risiko}
-Ausgehend von der Umfeldanalyse \ref{chap:projektumfeld} ) wurden die dort aufgelisteten sachlichen Faktoren sowie die ermittelten Stakeholder überprüft, ob sie Risiken für das Projekt darstellen oder beinhalten. Anschließend wurde mittels einer Brainstorming-Sitzung eine Kreativitätstechnik angewendet, um weitere Risiken zu identifizieren.
+Ausgehend von der Umfeldanalyse \ref{chap:projektumfeld} wurden die dort aufgelisteten sachlichen Faktoren sowie die ermittelten Stakeholder überprüft, ob sie Risiken für das Projekt darstellen oder beinhalten. Anschließend wurde mittels einer Brainstorming-Sitzung eine Kreativitätstechnik angewendet, um weitere Risiken zu identifizieren.
 \\
 \\
 Die hierdurch identifizierten Risiken sind in Tabelle \ref{tab:risiken_uebersicht} dargestellt. \\
@@ -297,7 +346,7 @@ Im Wesentlichen lassen sich drei unterschiedliche Arten von Projektorganisations
 \item[die Autonome Projektorganisation] Bei ihr wird das Projekt aus der Linie ausgegliedert und wird zu einem selbstständigen Element der Stammorganisation. Der Projektleiter übernimmt hierdurch sowohl die fachliche als auch disziplinarische Verantwortung über die Projektmitarbeiter. Dieses ist als größter Vorteil dieser Organisationsform zu werten, allerdings lässt sie sich nur langsam etablieren. Hierdurch ist diese Organisationsform vor allem für größere Projekte interessant.
 \end{description}
 
-Das Projekt ''Umlage 2010 - EPBB'' stellt ein Projekt in einem Projekt dar. Das übergeordnete Projekt Phoenics (s. die Beschreibung des Projektkontextes in \ref{sec:beschreibung}) ist ein nach der autonomen Projektorganisation organisiertes Projekt der MSG Systems AG und bildet damit die Stammorganisation für das Projekt ''Umlage 2010 - EPBB''. \\
+Das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' stellt ein Projekt in einem Projekt dar. Das übergeordnete Projekt \gls{Phoenics} (s. die Beschreibung des Projektkontextes in \ref{sec:beschreibung}) ist ein nach der autonomen Projektorganisation organisiertes Projekt der \gls{MSG} Systems AG und bildet damit die Stammorganisation für das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}''. \\
 Aufgrund der Kritikalität des Projektes, der Dauer von ca. 4 Monaten und geforderten kurzfristigen Etablierung des Projektes wurde eine Matrix-Projektorganisation gewählt. Ein Lenkungsausschuss wurde für das Projekt nicht etabliert. Hieraus entsteht das in Abbildung \ref{abb:organisation_organigramm} dargestellte Organigramm. In der Abbildung ist die Projektorganisation im Kontext der Stammorganisation ersichtlich, weiterhin sind an den Projektmitarbeitern ihre projektspezifischen Rollen hinterlegt. \\
 \begin{figure}
 \includegraphics [width=\linewidth,height= 22.5 cm]{Bilder/organigramm}
@@ -320,7 +369,7 @@ Aufgrund der projektentscheidenden Bedeutung des Themas erfolgt nun ein kurzer Ü
 \begin{description}
 \item[Das Sender und Empfänger Modell] Dieses Modell verdeutlicht eher die technische als die menschliche Kommunikation. Auf der einen Seite steht in diesem Modell der Sender, der an den Empfänger auf der anderen Seite eine Nachricht schickt. Eine etwaige Störquelle zwischen diesen beiden Kommunikationsparteien kann zu Fehlern bei der Nachrichtenübermittlung führen. Das Modell ist damit eher für die technische Kommunikation, z.B. den Austausch von Informationen zwischen einem Client und einem Server, relevant als für menschliche Interaktionen. Trotzdem ist das Sender- und Empfänger-Modell von  Shannon und Weaver bekannt als das klassische Kommunikationsmodell.
 \item[Sach- und Beziehungsebene] Im Gegensatz zu einer reinen technischen Kommunikation ist die Verständigung zwischen Menschen nicht nur von der reinen Information geprägt, die übermittelt wird, sondern auch von den Menschen selber. Es lässt sich dabei unterscheiden zwischen der Beziehungs- und der Sachebene. Auf der Sacheben steht die reine übermittelte Information, also die Zahlen, Daten und Fakten. Die Beziehungsebene hingegen wird geprägt von der Persönlichkeit und den Erfahrungen des einzelnen Individuums. Wesentliche Aspekte sind hier unter anderem die Emotionen, die jeweilige Kultur oder Religion. \\
-Wie ein Mensch eine durch zwischenmenschliche Kommunikation übermittelte Information aufnimmt, ist damit nur zu einem geringen Teil von der Sachebene (ca .10\% - 20\%) geprägt, sondern zum Großteil von der nicht sichtbaren Beziehungsebene (ca. 80\% - 90\%). Diese Erkenntnis ist auch als das Eisberg-Modell bekannt.    
+Wie ein Mensch eine durch zwischenmenschliche Kommunikation übermittelte Information aufnimmt, ist damit nur zu einem geringen Teil von der Sachebene (ca 10\% - 20\%) geprägt, sondern zum Großteil von der nicht sichtbaren Beziehungsebene (ca. 80\% - 90\%). Diese Erkenntnis ist auch als das Eisberg-Modell bekannt.    
 \item[die innere Landkarte] Die innere Landkarte stammt aus der Neurolinguistischen Programmierung (NLP) und bezeichnet eine Metapher für das innere Abbild der Wirklichkeit das jeder Mensch besitzt. Dieses Abbild ist aufgrund der verschiedenen Erfahrungen jedes Individuums unterschiedlich und stellt damit immer nur einen geringen und verzerrten Ausschnitt der wirklichen Realität dar. Die innere Landkarte besagt nun, dass eine Kommunikation zischen zwei Menschen nur möglich ist, wenn die jeweiligen inneren Landkarten beider Ähnlichkeiten oder Übereinstimmungen aufweisen.  
 \item[das Nachrichtenquadrat] Das Nachrichtenquadrat von Schulz von Thun ist auch als das Vier-Ohren-Modell bekannt. Es besagt, dass jede Kommunikation auf vier unterschiedlichen Ebenen erfolgt.
 \begin{enumerate}
@@ -333,7 +382,7 @@ Wie ein Mensch eine durch zwischenmenschliche Kommunikation übermittelte Informa
 Wie gut eine Kommunikation nach diesem Modell erfolgt, ist damit abhängig von der Harmonie, die bei Sender und Empfänger auf diesen vier Ebenen herrscht.
 \end{description}
 
-Entscheidend für den Erfolg des Projektes ''Umlage 2010 - EPBB'' ist die Kommunikation zu den in \ref{sec:stakeholder} ermittelten Stakeholdern des Projektes. 
+Entscheidend für den Erfolg des Projektes ''\gls{Umlage} 2010 - \gls{EPBB}'' ist die Kommunikation zu den in \ref{sec:stakeholder} ermittelten Stakeholdern des Projektes. 
 Für die Organisation der Kommunikationswege und -qualität wird eine Kommunikationsmatrix aufgestellt. In dieser werden für alle Stakeholder die jeweiligen Kommunikationswege und ihre Häufigkeit dargestellt. 
 \\
 \\
@@ -358,14 +407,15 @@ Der Phasenplan enthält dabei neben den elementaren Phasen auch die Meilensteine,
 Das Projektmanagment an sich stellt keine eigene Phase dar, sondern erfolgt projektübergreifend.  
 \\
 \\
-Die Einteilung eines Projektes in Phasen und damit auch der grundsätzliche Ablauf eines Projektes kann bereits durch ein allgemein verwendetes Vorgehensmodell vorgegeben werden. Ein Vorgehensmodell stellt eine Sammlung von ''Best PM Practices'' dar und hilft damit dem Projektleiter durch eine z.B. unternehmensweite Standardisierung seiner Tätigkeiten. Sie bieten ein Muster nach dem sich ein Projekt durchführen lässt und unterstützen dabei den Projektleiter z.B. durch Checklisten. \\  
+Die Einteilung eines Projektes in Phasen und damit auch der grundsätzliche Ablauf eines Projektes kann bereits durch ein allgemein verwendetes Vorgehensmodell vorgegeben werden. Ein Vorgehensmodell stellt eine Sammlung von ''Best \gls{PM} Practices'' dar und hilft damit dem Projektleiter durch eine z.B. unternehmensweite Standardisierung seiner Tätigkeiten. Sie bieten ein Muster nach dem sich ein Projekt durchführen lässt und unterstützen dabei den Projektleiter z.B. durch Checklisten. \\  
 
 \section{Projektphasen und Meilensteine} 
-In dem Projekt ''Phoenics'' das den Kontext und die Linie für das Projekt ''Umlage 2010 - EPBB'' darstellt wird das Vorgehensmodell ''Pro3'' verwendet. Pro3 ist eine speziell für dieses Projekt angepasste Version des Vorgehensmodells der msg systems ag ''Profi''. Profi selber beruht wieder rum auf dem Rational Unified Prozess (RUP). \\
-Pro3 ist ausgerichtet auf Großprojekte die sich in der Wartung befinden und in denen nur ein geringerer Teil der Ausgaben (ca. 30\%) für Neuentwicklungen bereit stehen. Daher handelt es sich um ein nicht iteratives Vorgehensmodell das einen großen Wert auf Qualitätsüberprüfungen legt. 
+\label{sec:projektphasen}
+In dem Projekt ''\gls{Phoenics}'' das den Kontext und die Linie für das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' darstellt wird das Vorgehensmodell ''\gls{Pro3}'' verwendet. \gls{Pro3} ist eine speziell für dieses Projekt angepasste Version des Vorgehensmodells der \gls{MSG} systems ag ''\gls{Profi}''. \gls{Profi} selber beruht wieder rum auf dem Rational Unified Prozess (\gls{RUP}). \\
+\gls{Pro3} ist ausgerichtet auf Großprojekte die sich in der Wartung befinden und in denen nur ein geringerer Teil der Ausgaben (ca. 30\%) für Neuentwicklungen bereit stehen. Daher handelt es sich um ein nicht iteratives Vorgehensmodell das einen großen Wert auf Qualitätsüberprüfungen legt. 
 \\
 \\    
-Da sich das Projekt ''Umlage 2010 - EPBB'' bis auf die Implementierung der Kundenanforderungen nicht um typische Pro3 Aufgaben handelt wird dieses Vorgehensmodell nicht vollständig auf das hier beschriebene Projekt angewandt. Eine Umsetzung nach Pro3 erfolgt lediglich in der Implementierungs-Phase (z.B. die Ermittlung des benötigten Aufwandes in \ref{sec:Einsatzmittelbedarf}). Dieses Vorgehen wurde zuvor mit dem Entwicklungsleiter Herrn Weiss abgestimmt. \\
+Da sich das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' bis auf die Implementierung der Kundenanforderungen nicht um typische \gls{Pro3} Aufgaben handelt wird dieses Vorgehensmodell nicht vollständig auf das hier beschriebene Projekt angewandt. Eine Umsetzung nach \gls{Pro3} erfolgt lediglich in der Implementierungs-Phase (z.B. die Ermittlung des benötigten Aufwandes in \ref{sec:bedarf}). Dieses Vorgehen wurde zuvor mit dem Entwicklungsleiter Herrn Weiss abgestimmt. \\
  Es wurden damit zu Beginn des Projektes folgende Phasen ermittelt, nach denen sich das Projekt grob unterteilen lässt:
 \begin{enumerate}
 \item die Initialisierungs-Phase.
@@ -384,7 +434,7 @@ Die jeweiligen Phasen mit ihren Hauptaktivitäten sind in der Tabelle \ref{tab:ph
 \label{tab:phasenliste}
 \end{figure}
 
-Jede der Phasen wird durch einen Meilenstein begonnen und durch einen Meilenstein abgeschlossen. Der Übergang zu der nächsten Phase des Projektes ist nur möglich, wenn die am Meilenstein hinterlegten Bedingungen erfüllt werden. Z. B. ist der Übergang von der Implementierungs-Phase zur Interner Test-Phase nur möglich, wenn der durch den Entwickler erstellte Entwicklernachweis (als Qualitäts-Garantie der Implementierung) durch den Projektleiter abgenommen ist. \\
+Jede der Phasen wird durch einen Meilenstein begonnen und durch einen Meilenstein abgeschlossen. Der Übergang zu der nächsten Phase des Projektes ist nur möglich, wenn die am Meilenstein hinterlegten Bedingungen erfüllt werden. Z. B. ist der Übergang von der Implementierungs-Phase zur Interner Test-Phase nur möglich, wenn der durch den Entwickler erstellte \gls{Entwicklernachweis} (als Qualitäts-Garantie der Implementierung) durch den Projektleiter abgenommen ist. \\
 Weiterhin wird bei jedem Meilenstein eine Überprüfung und Aktualisierung der Risikoliste, der Stakeholderliste und eine Überprüfung der angefertigten Planung (inklusive Kosten- und Einsatzmittelplanung) durchgeführt. \\
 
 
@@ -410,7 +460,7 @@ Diese Grafik bietet somit sowohl dem Projektleiter als auch dem Auftraggeber ein
 
 \chapter{Projektstrukturplan}
 \label{chap:psp}
-Der Projektstrukturplan (PSP) enthält eine strukturierte und vollständige Auflistung der gesamten im Projekt zu leistenden Arbeit. Damit organisiert und definiert er den gesamten Inhalt und den Umfang des Projektes. Aus ihm werden alle folgenden Pläne (z.B. in der Terminplanung der vernetzte Balkenplan \ref{abb:balkenplan}) hergeleitet, er wird deswegen auch als ''Mutter aller Pläne'' bezeichnet.
+Der Projektstrukturplan (\gls{PSP}) enthält eine strukturierte und vollständige Auflistung der gesamten im Projekt zu leistenden Arbeit. Damit organisiert und definiert er den gesamten Inhalt und den Umfang des Projektes. Aus ihm werden alle folgenden Pläne (z.B. in der Terminplanung der vernetzte Balkenplan \ref{abb:balkenplan}) hergeleitet, er wird deswegen auch als ''Mutter aller Pläne'' bezeichnet.
 \\
 \\
 Ausgehend von einem Wurzelelement werden alle Arbeitspakete des Projektes in einem Baum strukturiert dargestellt. Die Strukturierung des Baumes kann nach einem von vier Merkmalen erfolgen:
@@ -421,11 +471,11 @@ Ausgehend von einem Wurzelelement werden alle Arbeitspakete des Projektes in ein
 \item Gemischtorientiert: Eine Unterteilung erfolgt aufgrund einer Vermischung der zuvor aufgelisteten Orientierungen.
 \end{enumerate}
 
-Jedem Arbeitspaket im PSP wird weiterhin eine eindeutige Kennzeichung zugewiesen.
+Jedem Arbeitspaket im \gls{PSP} wird weiterhin eine eindeutige Kennzeichung zugewiesen.
 
 \section{Darstellung und Codierung des PSP}
-Für das Projekt ''Umlage 2010 - EPBB'' wird ein phasenorientierter PSP erstellt. Diese Strukturierungsart wurde gewählt, da die Phasen bereits eine natürliche Gliederung des Projektes vorgeben. Die Anwendung der anderen Orientierungsarten (s.o.) bietet sich hier nicht an, da sie keine klare und leicht nachvollziehbare Strukturierung erlauben.
-Der entstandene Phasenplan \ref{abb:psp} bietet einen vollständigen Überblick über die im Projekt zu leistende Arbeit, des Weiteren wurde für die einzelnen Arbeitspakete eine numerische PSP-Codierung gewählt. 
+Für das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' wird ein phasenorientierter \gls{PSP} erstellt. Diese Strukturierungsart wurde gewählt, da die Phasen bereits eine natürliche Gliederung des Projektes vorgeben. Die Anwendung der anderen Orientierungsarten (s.o.) bietet sich hier nicht an, da sie keine klare und leicht nachvollziehbare Strukturierung erlauben.
+Der entstandene Phasenplan \ref{abb:psp} bietet einen vollständigen Überblick über die im Projekt zu leistende Arbeit, des Weiteren wurde für die einzelnen Arbeitspakete eine numerische \gls{PSP}-Codierung gewählt. 
 
 \begin{figure}
 \includegraphics[width=\linewidth, height=22 cm]{Bilder/psp}
@@ -434,7 +484,7 @@ Der entstandene Phasenplan \ref{abb:psp} bietet einen vollständigen Überblick üb
 \end{figure}
 
 \section{Arbeitspaketbeschreibung}
-Für jedes im PSP \ref{abb:psp} enthaltene Arbeitspaket wird eine detaillierte Beschreibung erstellt. Hierdurch wird eine klare Aufgabenverteilung innerhalb des Projektes erreicht und jedes Teammitglied kann innerhalb kürzester Zeit sich einen Überblick über alle seine Aufgaben verschaffen. Um eine Einheitlichkeit zwischen den jeweiligen Arbeitspaketsbeschreibungen zu gewährleisten, wird ein vorher definiertes Format als Basis für jede Beschreibung verwendet. \\
+Für jedes im \gls{PSP} \ref{abb:psp} enthaltene Arbeitspaket wird eine detaillierte Beschreibung erstellt. Hierdurch wird eine klare Aufgabenverteilung innerhalb des Projektes erreicht und jedes Teammitglied kann innerhalb kürzester Zeit sich einen Überblick über alle seine Aufgaben verschaffen. Um eine Einheitlichkeit zwischen den jeweiligen Arbeitspaketsbeschreibungen zu gewährleisten, wird ein vorher definiertes Format als Basis für jede Beschreibung verwendet. \\
 Unter \ref{tab:arbeitspaket1} und \ref{tab:arbeitspaket2} sind beispielhaft zwei der erstellten Arbeitspakletbeschreibungen dargestellt. 
 
 \begin{figure}
@@ -452,12 +502,12 @@ Unter \ref{tab:arbeitspaket1} und \ref{tab:arbeitspaket2} sind beispielhaft zwei
 
 \chapter{Ablauf- und Terminplanung}
 \label{chap:terminplanung}
-In der Ablauf- und Terminplanung für ein Projekt werden die im PSP dargestellten Arbeitspakete zeitlich eingeplant. Mit ihr wird der größte Detaillierungsgrad in der Planungsphase des Projektes erreicht. Die Terminplanung erlaubt dem Projektleiter einen klaren Überblick über den zeitlichen Verlauf des Projektes und befähigt ihn somit die gesetzten Terminziele zu erreichen. \\
+In der Ablauf- und Terminplanung für ein Projekt werden die im \gls{PSP} dargestellten Arbeitspakete zeitlich eingeplant. Mit ihr wird der größte Detaillierungsgrad in der Planungsphase des Projektes erreicht. Die Terminplanung erlaubt dem Projektleiter einen klaren Überblick über den zeitlichen Verlauf des Projektes und befähigt ihn somit die gesetzten Terminziele zu erreichen. \\
 Das wichtigste Instrument für die Ablauf- und Terminplanung ist die Netzplantechnik, bei der alle Abläufe und deren Abhängigkeiten in einem gerichteten Graphen dargestellt werden. Eine alternative Visualisierungsmethode bietet der vernetzte Balkenplan (Gantt-Chart).
 
 \section{Vorgangsliste}
-Basis der Vorgangsliste für das Projekt ''Umlage 2010 - EPBB'' sind die im PSP \ref{abb:psp} hinterlegten Arbeitspakete. Diese könnten weiter untergliedert werden in einzelne Vorgänge. Auf eine weitere Detaillierung wurde hier allerdings verzichtet, da der Detailgrad der Arbeitspakete für eine klare Terminplanung ausreichend ist. 
-Die für das Projekt ermittelte Vorgangsliste ist in \ref{tab:vorgangsliste} dargestellt. Jeder Vorgang ist hierbei durch den PSP-Code gekennzeichnet bzw.  im Falle der Meilensteine durch das in \ref{tab:meilensteine} definierte Meilensteinkürzel.
+Basis der Vorgangsliste für das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' sind die im \gls{PSP} \ref{abb:psp} hinterlegten Arbeitspakete. Diese könnten weiter untergliedert werden in einzelne Vorgänge. Auf eine weitere Detaillierung wurde hier allerdings verzichtet, da der Detailgrad der Arbeitspakete für eine klare Terminplanung ausreichend ist. 
+Die für das Projekt ermittelte Vorgangsliste ist in \ref{tab:vorgangsliste} dargestellt. Jeder Vorgang ist hierbei durch den \gls{PSP}-Code gekennzeichnet bzw.  im Falle der Meilensteine durch das in \ref{tab:meilensteine} definierte Meilensteinkürzel.
 
 \begin{figure}
 \includegraphics [width=\linewidth,height= 22 cm]{Bilder/vorgangsliste}
@@ -468,7 +518,7 @@ Die für das Projekt ermittelte Vorgangsliste ist in \ref{tab:vorgangsliste} darg
 \section{Balkenplan}
 Um sich einen schnellen Überblick über das Projekt und seinen kritischen Pfad zu verschaffen eignet sich eine grafische Darstellung der Vorgangsliste (s. \ref{tab:vorgangsliste}).
 Aufgrund der schlechten Darstellbarkeit eines übersichtlichen Netzplanes im Din A4 Format wurde an dieser Stelle der vernetzte Balkenplan zur Visualisierung gewählt.
-Der für das Projekt  ''Umlage 2010 - EPBB''  errechnete Balkenplan ist in der Abbildung \ref{abb:balkenplan} dargestellt.
+Der für das Projekt  ''\gls{Umlage} 2010 - \gls{EPBB}''  errechnete Balkenplan ist in der Abbildung \ref{abb:balkenplan} dargestellt.
 
 
 \begin{figure}
@@ -479,32 +529,33 @@ Der für das Projekt  ''Umlage 2010 - EPBB''  errechnete Balkenplan ist in der Ab
 
 \chapter{Einsatzmittel- /Kostenplanung}
 Bei der Einsatzmittel- und Kostenplanung gilt es das bereits durch die Terminplanung (s. \ref{chap:terminplanung}) zeitlich strukturierte Projekt mit den real Verfügbaren Ressourcen in Einklang zu bringen. Ressourcen lassen sich hierbei unterscheiden in Personal, Material, Sach- und Finanzmittel. \\
-Für die Einsatzmittelplanung muss auf Basis des PSPs (\ref{cahp:psp}) der Ressourcenbedarf für die einzelnen Arbeitspakete ermittelt werden. Werden diese Bedarfe mit der Terminplanung gekreuzt ergeben sich die benötigten Ressourcen je Zeitraum. Diese gilt es anschließend mit den vorhandenen Kapazitäten in Einklang zu bringen. \\
+Für die Einsatzmittelplanung muss auf Basis des \gls{PSP}s (\ref{chap:psp}) der Ressourcenbedarf für die einzelnen Arbeitspakete ermittelt werden. Werden diese Bedarfe mit der Terminplanung gekreuzt ergeben sich die benötigten Ressourcen je Zeitraum. Diese gilt es anschließend mit den vorhandenen Kapazitäten in Einklang zu bringen. \\
 Abschließend werden bei der Kostenplanung ermittelt wann welche Kosten für Material, Personal, Sachmittel und Kapitel im Projektverlauf anfallen und welche Gesamtkosten das Projekt haben wird.   
 
 \section{Einsatzmittelbedarf}
 \label{sec:bedarf}
-Für die Ermittlung der Einsatzmittel im Projekt ''Umlage 2010 - EPBB'' werden zu erst die Einsatzmittelarten festgelegt. Allgemein werden sowohl Personen- als auch Sachmittel benötigt. Unter die Sachmittel fallen z.B. Server, Testumgebungen oder Laptops. Diese stehen allerdings dem Projekt ''Phoenics'' bereits alle in ausreichender Kapazität zur Verfügung und müssen nach Rücksprache mit dem Entwicklungsleiter ebenfalls nicht als Kosten für das Projekt verbucht werden. Daher werden im Weiteren Sachmittel nicht weiter beachtet, sondern lediglich die Arten und Kapazitäten der benötigten Personen ermittelt. \\
+Für die Ermittlung der Einsatzmittel im Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' werden zu erst die Einsatzmittelarten festgelegt. Allgemein werden sowohl Personen- als auch Sachmittel benötigt. Unter die Sachmittel fallen z.B. Server, \gls{Testumgebungen} oder Laptops. Diese stehen allerdings dem Projekt ''\gls{Phoenics}'' bereits alle in ausreichender Kapazität zur Verfügung und müssen nach Rücksprache mit dem Entwicklungsleiter ebenfalls nicht als Kosten für das Projekt verbucht werden. Daher werden im Weiteren Sachmittel nicht weiter beachtet, sondern lediglich die Arten und Kapazitäten der benötigten Personen ermittelt. \\
 Die für die Arbeitspakete erforderlichen Personen lassen sich nach den benötigten Fähigkeiten unterscheiden in die in folgende Rollen:
 \begin{description}
 \item[Projektleiter (PL)]  Der Projektleiter muss über eine hohe Fach-, Methoden- und Sozialkompetenz verfügen. Er plant, steuert und überwacht das Projekt.
-\item[Software-Architekt (SA)] Der Software-Architekt ist nach Pro3 zuständig für das Design von Neuentwicklungen und Anpassungen. Er verfügt über sehr gute technische und Kommunikative Fähigkeiten. Die Rolle wird von erfahrenen Software Entwickler besetzt die bereits mehrere Jahre im Projekt ''Phoenics'' arbeiten. Er wird für das Design der Neuentwicklung benötigt.
-\item[Tester (TT)] Der Tester ist nach Pro3 zuständig für die Qualitätssicherung der bestehenden und neuentwickelten Software. Er kennt sich mit Testtechniken und Methoden aus und verfügt über ein sehr gutes und am besten übergreifendes Fachwissen. Wird zum internen Test der Neuentwicklung benötigt.
-\item[Betriebler (BE)] Kennt sich mit Betrieb der Software ''Phoenics'' aus und dem aufsetzen von jeweils benötigten Umgebungen. Wird zum Aufsetzen von überwachen von allen erforderlichen Umgebungen benötigt. 
-\item[Entwickler Beitrag (EB)] Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Beitrag auskennt. Wird sowohl zur Neuentwicklung der Kundenanfordeurng, als auch zum Bugfixing dieser und des bestehenden Systems benötigt. 
-\item[Entwickler Dokumentensystem (ED)] Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Dokumentensystem auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
-\item[Entwickler Zahlungswesen (EZ)]  Sotwareentwickler der sich sehr gut in der ''Pheonics'' Komponente Zahlungswesen auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
+\item[Software-Architekt (SA)] Der Software-Architekt ist nach \gls{Pro3} zuständig für das Design von Neuentwicklungen und Anpassungen. Er verfügt über sehr gute technische und Kommunikative Fähigkeiten. Die Rolle wird von erfahrenen Software Entwickler besetzt die bereits mehrere Jahre im Projekt ''\gls{Phoenics}'' arbeiten. Er wird für das Design der Neuentwicklung benötigt.
+\item[Tester (TT)] Der Tester ist nach \gls{Pro3} zuständig für die Qualitätssicherung der bestehenden und neuentwickelten Software. Er kennt sich mit Testtechniken und Methoden aus und verfügt über ein sehr gutes und am besten übergreifendes Fachwissen. Wird zum internen Test der Neuentwicklung benötigt.
+\item[Betriebler (BE)] Kennt sich mit dem Betrieb der Software ''\gls{Phoenics}'' aus und dem Aufsetzen von jeweils benötigten Umgebungen. Wird zum Aufsetzen und dem Überwachen von allen erforderlichen Umgebungen benötigt. 
+\item[Entwickler Beitrag (EB)] Sotwareentwickler, der sich sehr gut in der ''Pheonics'' Komponente ''Beitrag'' auskennt. Wird sowohl zur Neuentwicklung der Kundenanfordeurng, als auch zum Bugfixing dieser und des bestehenden Systems benötigt. 
+\item[Entwickler Dokumentensystem (ED)] Sotwareentwickler, der sich sehr gut in der ''Pheonics'' Komponente ''Dokumentensystem'' auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
+\item[Entwickler Zahlungswesen (EZ)]  Sotwareentwickler, der sich sehr gut in der ''Pheonics'' Komponente ''Zahlungswesen'' auskennt. Wird zum Bugfixing von Fehlern in diesem Bereich benötigt. 
 \end{description}
 
-Die ermittelte Zuordnung von Einsatzmittelarten zu Arbeitspaketen ist der Tabelle \ref{tab:vorgang_ressourcen} zu entnehmen.
-
+Die ermittelte Zuordnung von Einsatzmittelarten zu Arbeitspaketen ist der Tabelle \ref{tab:vorgang_ressourcenart} zu entnehmen.
+\\
+\\
 \begin{figure}
-\includegraphics[width=\linewidth]{Bilder/vorgang_ressourcen}
+\includegraphics[width=\linewidth,height= 22 cm]{Bilder/vorgang_ressourcenart}
 \captionof{table}{Vorgangsliste mit Zuordnung der Ressourcen}
-\label{abb:vorgang_ressourcen}
+\label{tab:vorgang_ressourcenart}
 \end{figure}
 
-Nach der Zuordnung von Einsatzmittelarten zu den jeweiligen Arbeitspaketen des aufgestellten PSPs \ref{abb:psp} werden die Aufwände für diese geschätzt. Hierzu wird nach dem Vorgehensmodell Pro3 ein dreistufige Expertenschätzung durchgeführt. Der für das einzelne Arbeitspaket verantwortliche Projektmitarbeiter schätzt seinen benötigten Aufwand in Stunden und erfasst diesen in dem dafür vorgesehenen ''Schätzsheet''. Diese Schätzung wird durch einen anderen Projektmitarbeiter begutachtet und bewertet. In einem abschließenden ''Schätzmeeting'' äußern sich sowohl Schätzer als auch Gutachter zu der Schätzung und ein finaler Aufwandswert wird festgelegt. \\
+Nach der Zuordnung von Einsatzmittelarten zu den jeweiligen Arbeitspaketen des aufgestellten \gls{PSP}s \ref{abb:psp} werden die Aufwände für diese geschätzt. Hierzu wird nach dem Vorgehensmodell \gls{Pro3} eine dreistufige Expertenschätzung durchgeführt. Der für das einzelne Arbeitspaket verantwortliche Projektmitarbeiter schätzt seinen benötigten Aufwand in Stunden und erfasst diesen in dem dafür vorgesehenen ''Schätzsheet''. Diese Schätzung wird durch einen anderen Projektmitarbeiter begutachtet und bewertet. In einem abschließenden ''Schätzmeeting'' äußern sich sowohl Schätzer als auch Gutachter zu der Schätzung und ein finaler Aufwandswert wird festgelegt. \\
 Mittels dieses Prozesses werden alle Arbeitspakete nach Aufwand in Stunden bewertet.
 \\
 \\
@@ -519,21 +570,27 @@ Die Auswahl der konkreten Mitarbeiter für die jeweiligen Rollen erfolgt durch de
 \end{figure}
 
 \section{Projektkosten}
-Für die Ermittlung der Projektkosten können sowohl die Sachmittelkosten (s.o.) als auch die Kosten die auf der Seite der BG Bau durch den Abnahmetest anfallen abgegrenzt werden, da sie nach Vereinbarung nicht auf die Kostenstelle des Projektes verbucht werden. \\
+Für die Ermittlung der Projektkosten können sowohl die Sachmittelkosten (s.o.) als auch die Kosten, die auf der Seite der \gls{BG} \gls{Bau} durch den Abnahmetest anfallen, abgegrenzt werden, da sie nach Vereinbarung nicht auf die Kostenstelle des Projektes verbucht werden. \\
 Hierdurch ergeben sich zwei verschiedene Kostenarten: 
 
 \begin{description}
-\item[Personenkosten] Die Kosten für die in \ref{sec:bedarf} ermittelten Personen ergeben sich aus deren Stundensätzen multipliziert mit den zu erbringenden Projektstunden. Die Stundensätze sind in der Tabelle \ref{tab:stundensaetze} aufgelistet und fallen mit jeder geleisteten Stunde an. Die Personenkosten belaufen sich auf XXXXXX ?.
-\item[Risikokosten] Die Kosten für die in der Risikoanalyse ermittelten durchzuführenden Maßnahmen (s. \ref{tab:risiken_massnahmen} ). Sie werden bereits nach dem Kick-Off fällig und belaufen sich auf insgesamt 22000 ?.
+\item[Personenkosten] Die Kosten für die in \ref{sec:bedarf} ermittelten Personen ergeben sich aus deren Stundensätzen multipliziert mit den zu erbringenden Projektstunden. Die Stundensätze sind in der Tabelle \ref{tab:ressourcen_kosten} aufgelistet und fallen mit jeder geleisteten Stunde an. Die Personenkosten belaufen sich auf 1444029,76 Euro.
+\item[Risikokosten] Die Kosten für die in der Risikoanalyse ermittelten durchzuführenden Maßnahmen (s. \ref{tab:risiken_massnahmen} ). Sie werden bereits nach dem Kick-Off fällig und belaufen sich auf insgesamt 22000 Euro.
 \end{description}
 
-Die Kosten werden jeweils den einzelnen Arbeitspaketen in der Tabelle \ref{tab:kosten} zugeordnet und ergeben sich aus der Summe der Risikokosten und der personalkosten und belaufen sich demnach auf XXXXX ?.\\
-Anschaulich darstellen lassen sich die Kosten und damit der Finanzmittelbedarf durch die Kostengangslinie \ref{abb:kostengang} und die Kostensummenlinie \ref{acc:kostensumme}.
+\begin{figure}
+\includegraphics[width=\linewidth]{Bilder/ressourcen_kosten}
+\captionof{table}{Einsatzmittel und Projektrollen}
+\label{tab:ressourcen_kosten}
+\end{figure}
+
+Die Kosten werden jeweils den einzelnen Arbeitspaketen in der Tabelle \ref{tab:vorgang_kosten} zugeordnet und ergeben sich aus der Summe der Risikokosten und der Personalkosten und belaufen sich demnach auf 166029,76 Euro.\\
+Anschaulich darstellen lassen sich die Kosten und damit der Finanzmittelbedarf durch die Kostengangslinie \ref{abb:kostengang} und die Kostensummenlinie \ref{abb:kostensumme}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{Bilder/kosten}
-\captionof{table}{Zuordnung Kosten zu Vorgangsliste}
-\label{tab:kosten}
+\includegraphics[width=\linewidth,height= 22 cm]{Bilder/vorgang_kosten}
+\captionof{table}{Zuordnung Kosten zu Arbeitspaketen}
+\label{tab:vorgang_kosten}
 \end{figure}
 
 \begin{figure}
@@ -549,60 +606,60 @@ Anschaulich darstellen lassen sich die Kosten und damit der Finanzmittelbedarf d
 \end{figure}
 
 \chapter{Verhaltenskompetenz}
-Viele Projekte scheitern nicht an den ''harten'' Themenkomplexen wie technischem Know-How, sondern an ''weichen'' Faktoren wie der fehlender Kommunikation oder zwischen menschlichen Konflikten im Projektteam. Daher genügt es nicht wenn ein Projektleiter über ein hervorragendes Wissen und Erfahrung in den technischen Kompetenzelementen verfügt, sondern er muss auch die sozialen Vorraussetzungen für ein erfolgreiches Projekt schaffen können. Er muss damit auch Fertigkeiten in den ''Verhaltenskompetenzen'' besitzen. Diese sind während der gesamten Projektlaufzeit in unterschiedlichen Ausmaßen gefordert. \\
-Beispielhaft werden in  \ref{sec:kreativitaet} und \ref{sec:ergebnisorientierung} zwei dieser Kompetenelemente vorgestellt.  
+Viele Projekte scheitern nicht an den ''harten'' Themenkomplexen wie technischem Know-How, sondern an ''weichen'' Faktoren wie fehlender Kommunikation oder zwischenmenschlichen Konflikten im Projektteam. Daher genügt es nicht wenn, ein Projektleiter über ein hervorragendes Wissen und Erfahrung in den technischen Kompetenzelementen verfügt, sondern er muss auch die sozialen Vorraussetzungen für ein erfolgreiches Projekt schaffen können. Er muss damit auch Fertigkeiten in den ''Verhaltenskompetenzen'' besitzen. Diese sind während der gesamten Projektlaufzeit in unterschiedlichen Ausmaßen gefordert. \\
+Beispielhaft werden in  \ref{sec:kreativitaet} und \ref{sec:ergebnisorientierung} zwei dieser Kompetenzelemente vorgestellt.  
 
 \section{Kreativität}
-\label{sec:krativitaet}
-Ein Problem lässt sich definieren als eine Aufgabe deren Lösung nicht offensichtlich ist. Dieses hat zur Folge das eine Lösung erst gefunden werden muss, hierzu ist immer ein Maß an Kreativität erforderlich. \\
-Da nicht nur das Projekt selber immer ein Problem beinhaltet sondern sich auch  während des Projektverlaufes neue fortwährend neue Probleme auftun die es zu lösen gilt ist die Kreativität ein wesentlicher Bestandteil eines jeden Projektes.   
+\label{sec:kreativitaet}
+Ein Problem lässt sich definieren als eine Aufgabe, deren Lösung nicht offensichtlich ist. Dieses hat zur Folge, dass eine Lösung erst gefunden werden muss. Hierzu ist immer ein Maß an Kreativität erforderlich. \\
+Da nicht nur das Projekt selber immer ein Problem beinhaltet sondern sich auch  während des Projektverlaufes fortwährend neue Probleme auftun, die es zu lösen gilt, ist die Kreativität ein wesentlicher Bestandteil eines jeden Projektes.   
 \\
 \\
-Hierbei gilt es für den Projektleiter ein Umfeld zu etablieren das Kreativität fördert aber ein zielgerichtetes Vorgehen nicht außer acht lässt. Der Grad an erforderlicher Kreativität ist hierbei unter anderem abhängig von der Art des Projektes, so ist jedes Innovationsprojekt ohne eine kreative Umgebung zum Scheitern verurteilt. \\
-Kreativ können hierbei sowohl Einzelpersonen als auch das Projektteam als ganzes sein, beide Formen müssen durch den Projektleiter angeregt, kanalisiert und moderiert werden. \\
-Förderlich dabei ist die Vermeidung von Keativitätsblockaden, diese lassen sich unterscheiden in:
+Hierbei gilt es für den Projektleiter ein Umfeld zu etablieren, dass Kreativität fördert aber ein zielgerichtetes Vorgehen nicht außer acht lässt. Der Grad an erforderlicher Kreativität ist hierbei unter anderem abhängig von der Art des Projektes. So ist jedes Innovationsprojekt ohne eine kreative Umgebung zum Scheitern verurteilt. \\
+Kreativ können hierbei sowohl Einzelpersonen als auch das Projektteam als Ganzes sein. Beide Formen müssen durch den Projektleiter angeregt, kanalisiert und moderiert werden. \\
+Förderlich dabei ist die Vermeidung von Keativitätsblockaden. Diese lassen sich unterscheiden in:
 
 \begin{description}
-\item[Wahrnehmungsblockade] Es wird nicht der gesamte Lösungsraum betrachtet, sondern nur ein sehr geringer Teil. Eine typische Folge ist die Auswahl der ''erst besten'' Lösung .
-\item[Blockaden der Ausdrucksfähigkeit] Kreative Ideen können nicht vermittelt werden. DIe betroffene Person wird von ihrer Umgebung als nicht kreativ wahrgenommen, was zu einer weiterenVerstärkung der Ausdrucksfähigkeit führen kann.
+\item[Wahrnehmungsblockade] Es wird nicht der gesamte Lösungsraum betrachtet, sondern nur ein sehr geringer Teil. Eine typische Folge ist die Auswahl der ''erstbesten'' Lösung .
+\item[Blockaden der Ausdrucksfähigkeit] Kreative Ideen können nicht vermittelt werden. Die betroffene Person wird von ihrer Umgebung als nicht kreativ wahrgenommen, was zu einer weiterenVerstärkung der Ausdrucksfähigkeit führen kann.
 \item[Umweltbedingte Blockaden] Die bekannteste der Blockadearten. Ein Individuum wir in seiner Kreativität durch seine Umgebung beeinträchtigt. Typische Beispiele sind Bürokratie, Zeitdruck oder Nichtanerkennung.  
 \end{description}
 
 Neben der Vermeidung von Blockaden kann der Projektleiter und sein Team durch die Einhaltung eines kreativen Prozesses zu besseren Lösungen kommen.
 Ein typischer Prozess lässt sich hierbei in die folgenden Phasen untergliedern:
 \begin{enumerate}
-\item Präperation: Das zu lösende Problem wird definiert, beschrieben undanalysiert.
+\item Präperation: Das zu lösende Problem wird definiert, beschrieben und analysiert.
 \item Inkubation: Es wird eine ''Brutzeit'' eingeräumt, in der die Teilnehmer das beschriebene Problem erst einmal ''sacken'' lassen.
 \item Illumination: Es werden spontane Lösungsideen gesammelt ohne diese zu bewerten.
 \item Verifikation: Die gefundenen Ideen werden bewertet und die es wir eine Lösung ausgewählt.
  \end{enumerate}
 
-Dieser Prozess kann durch mehrere Kreativitätstechniken unterstützt werden. Einige dieser Techniken sind unter anderem: 
+Dieser Prozess kann durch mehrere Kreativitätstechniken unterstützt werden. Einige dieser Techniken sind z.B.: 
 \begin{description}
-\item[Brainstorming] Ideen werden unter Einhaltung des oben beschriebenen Prozesses wahllos gesammelt und festgehalten.
-\item[Mind Mapping] Ähnlich dem Brainstorming werden Ideen gesammelt. Diese werden nur als ein Stichwort notiert und bereits in strukturierten Zusammenhängen dargestellt.   
-\item[Reizwortanalyse] Es wird eine Liste von Reizwörtern aus verschiedenen Bereichen in der Gruppe herumgereicht oder vorgelesen. Durch die Konfrontation mit diesen Wörtern sollen besonders außergewöhnliche Lösungen erarbeitet werden. 
+\item[Das Brainstorming] Ideen werden unter Einhaltung des oben beschriebenen Prozesses wahllos gesammelt und festgehalten.
+\item[Das Mind Mapping] Ähnlich dem Brainstorming werden Ideen gesammelt. Diese werden nur als ein Stichwort notiert und in bereits strukturierten Zusammenhängen dargestellt.   
+\item[Die Reizwortanalyse] Es wird eine Liste von Reizwörtern aus verschiedenen Bereichen in der Gruppe herumgereicht oder vorgelesen. Durch die Konfrontation mit diesen Wörtern sollen besonders außergewöhnliche Lösungen erarbeitet werden. 
 \end{description}
 
-Das Projekt ''Umlage 2010 - EPBB'' stellt kein Innovationsprojekt da, trotzdem ist es in hohem Maße abhängig von den zur Projektlaufzeit gefundenen Lösungen für die jeweiligen Probleme. Typische Punkte die während der Projektlaufzeit auftreten sind und Kreativität erfordern sind zum Beispiel das Design der Neuentwicklung durch den Software Architekten, die Ermittlung der Risiken aber auch im kleineren das Beheben eines Softwarefehlers.
+Das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' stellt kein Innovationsprojekt dar. Trotzdem ist es in hohem Maße abhängig von den zur Projektlaufzeit gefundenen Lösungen für die jeweiligen Probleme. Typische Punkte die während der Projektlaufzeit auftreten und Kreativität erfordern sind zum Beispiel das Design der Neuentwicklung durch den Software Architekten, die Ermittlung der Risiken aber auch im Kleineren das Beheben eines Softwarefehlers.
 \\
 \\
 Als Beispiel für einen kreativen Prozess wird die Stakeholderanalyse für das Projekt dargestellt.\\
-Für die Ermittlung der relevanten Stakeholder hat der Projektleiter in seinem Büro in einer Mind Map zu erst alle relevanten Stakeholder gesammelt die ihm eingefallen sind.
+Für die Ermittlung der relevanten Stakeholder hat der Projektleiter in seinem Büro in einer Mind Map zuerst alle relevanten Stakeholder gesammelt, die ihm eingefallen sind.
 Anschließend wurde die so ermittelte Liste von ihm in einem zweiten Schritt begutachtet und nicht relevante Stakeholder wurden wieder entfernt. In einem dritten Schritt wurden
 die noch vorhandenen Stakeholder klassifiziert, bewertet und in das Stakeholder-Portfolio übernommen.      
 \\
 \\
 Ausgehend von der zuvor dargestellten theoretischen Grundlage lässt sich der angewandte Prozess bewerten. \\
-Es handelte sich hierbei um die Kreativität einer einzelnen person, des Projektleiters. Der vorgestellte kreative Prozess wurde im wesentlichen eingehalten, allerdings entfiel die Phase zwei Inkubation. Des weiteren kann von einem gewissen Maß von einer umweltbedingten Blockade ausgegangen werden , da die Tätigkeit in seinem Büro statt fand. Unterbrechungen durch eintretende Personen, Telefonanrufe, E-Mails oder Instant Messanger Benachrichtigungen sind somit nicht ausgeschlossen. Eingesetzt wurde als Technik die Mind Map. 
+Es handelte sich hierbei um die Kreativität einer einzelnen Person, die des Projektleiters. Der vorgestellte kreative Prozess wurde im wesentlichen eingehalten, allerdings entfiel die Phase 2 Inkubation. Desweiteren kann von einem gewissen Maß von einer umweltbedingten Blockade ausgegangen werden, da die Tätigkeit in seinem Büro stattfand. Unterbrechungen durch eintretende Personen, Telefonanrufe, E-Mails oder Instant Messanger Benachrichtigungen sind somit nicht ausgeschlossen. Eingesetzt wurde als Technik die Mind Map. 
 \\
 \\
-Der vorgestellte Prozess kann damit als hinreichend gut bewertet werden, allerdings nicht als optimal. Die Stakeholderanalyse hätte besser im Team stattgefunden. Der Projektleiter hätte hierbei als Moderator fungiert, der die EInhaltung des Prozesses überwacht und somit sicher gestellt hätte das Phase zwei nicht übersprungen wird. Als Ort hätte ein abgelegener Meetingraum ohne Laptops und Telefon dienen können. Die Mind Mapping Technik hätte in der Gruppe dann durch Techniken wie den Morphologischen Kasten abgelöst werden können. 
+Der vorgestellte Prozess kann damit als hinreichend gut bewertet werden, allerdings nicht als optimal. Die Stakeholderanalyse hätte besser im Team stattgefunden. Der Projektleiter hätte hierbei als Moderator fungiert, der die Einhaltung des Prozesses überwacht und somit sicher gestellt hätte, dass Phase 2 nicht übersprungen wird. Als Ort hätte ein abgelegener Meetingraum ohne Laptops und Telefon dienen können. Die Mind Mapping Technik hätte in der Gruppe dann durch Techniken wie den Morphologischen Kasten abgelöst werden können. 
 
 
 \section{Ergebnisorientierung}
 \label{sec:ergebnisorientierung}
-Projekte sollen mit Hilfe eines guten Projektmanagments zu einem Erfolg geführt werden, sprich sie am Ende des Projektes soll ein Ergebnis stehen mit dem alle beteiligte Stakeholder einverstanden sind. Auf dieses Ergebnis muss Zielgerichtet und fokussiert hingearbeitet werden. Neben der Etablierung eines Prozesses der diese Fokussierung des Projektteams fördert ist sind auch die sozialen Kompetenzen des Projektleiters gefordert. \\
+Projekte sollen mit Hilfe eines guten Projektmanagments zu einem Erfolg geführt werden, sprich am Ende des Projektes soll ein Ergebnis stehen, mit dem alle beteiligte Stakeholder einverstanden sind. Auf dieses Ergebnis muss zielgerichtet und fokussiert hingearbeitet werden. Neben der Etablierung eines Prozesses der diese Fokussierung des Projektteams fördert, sind auch die sozialen Kompetenzen des Projektleiters gefordert. \\
 An ihm als Person liegt es, dauerhaft und iterativ über die gesamte Projektlaufzeit hinweg, dem Projektteam ein einheitliches Ziel zu vermitteln und den Kurs auf dieses zu wahren. Ergebnisorientierung spielt sich damit über den gesamten Ablauf eines Projektes ab und kann als Meta-Ebene verstanden werden auf der der Projektleiter stetig seine Handlungsoptionen überprüfen und bewerten muss.
 \\
 \\
@@ -612,9 +669,82 @@ Die Ergebnisorientierung lässt sich dabei nach folgenden Betrachtungsebenen unte
 \item[DIe Handlungs-Ebene] beinhaltet die reine Abwicklung des Projektes, hierbei wird noch einmal unterschieden in die Methodische-Ebene (Kosten, Zeit, Leistung ... ) und die Soziale-Ebene(Kommunikation, Führung ...).
 \end{description}   
 
-Die Verantwortung des Projektleiter liegt dabei hauptsächlich auf der Handlungs-Ebene.
+Die Verantwortung des Projektleiters liegt dabei hauptsächlich auf der Handlungs-Ebene. Er fungiert dabei als Schnittstelle zwischen seinem Team und dem Auftraggeber und muss das Projekt wie ein eigenes Unternehmen führen. Dabei ist nicht sein Einsatz relevant, sondern nur das erreichte Endergebnis. \\
+Die hierzu aufgesetzten Prozesse muss er sorgsam auf ihre Sinnhaftigkeit überprüfen, getreu dem Motto ''in doubt let it out''.  
+\\
+\\
+Die IPMA bietet ihm hier zur Unterstützung sowohl einen Leitfaden als auch eine Checkliste an. Im Weiteren wird der Leitfaden kurz erläutert und das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' mittels der Checkliste analysiert. \\
+Der Leitfaden zur Realisierung der Ergebnisorientierung beinhaltet folgende Fragestellungen:
+\begin{description}
+\item[Was ist es?] Was ist das Ziel das ich erreichen will?
+\item[Wer macht es?] Wer ist für die Erreichung des Zieles verantwortlich? Wer ist für die Ausführung von einzelnen Arbeitspaketen verantwortlich?
+\item[Wann ist es zu tun?] Wann müssen welche Maßnahmen ergriffen werden? Wann muss welche Aktivität beginnen?
+\item[Wie oft ist es zu tun?] An welchen Stellen muss der Projektleiter korrigierend, steuernd, planend eingreifen?
+\item[Worauf ist zu achten?] Welche Punkte müssen beachtet werden? Nach welcher Priorität muss vorgegangen werden? 	 
+\end{description}
 
-\chapter{Berichtswesen, Projektdokumentation}
+Ausgehend von diesen Leitsätzen kann das Projekt dieses Transfernachweises nach der Checkliste der IPMA bewertet werden:
+\begin{enumerate}
+\item \textbf{Adäquate Projektplanung:} Das Projekt wurde hinreichend geplant ohne in eine zu große Detailtiefe zu gehen. Damit soll verhindert werden, dass die Planung zu einem Selbstzweck wird sondern lediglich ein unterstützendes Werkzeug für den Projektleiter bildet. Die Planung wird weiterhin zu jedem Meilenstein hin aktualisiert und angepasst. Ebenso wurde das Vorgehensmodell \gls{Pro3} (s. \ref{sec:projektphasen}) nur in der Phase Implementierung übernommen um keinen zu schwergewichtigen Prozess für ein kleineres Projekt zu verwenden.
+\item \textbf{Beteiligung des Teams an der Planung:} Das Team wurde bei der Verteilung der Arbeitspakete mit einbezogen, allerdings nicht in die Grobplanung selber. Diese obliegt dem Projektleiter, damit er in einem ihm bekannten Umfeld eine klare Richtung bereits zu Beginn des Projektes vorgeben kann. Das Team wird bei der Aktualisierung der Projektplanung zu jedem Meilenstein mit eingebunden und über den Status umfassend informiert.
+\item \textbf{Frühzeitige Zielklärung mit den Beteiligten:} Die Projektziele wurden bereits zu Beginn des Projektes, noch vor dem Kick-Off, mit dem Entwicklungseiter (\gls{PAG}) geklärt und durchgesprochen. Dem Projektteam, als weitere Hauptbeteiligte, wurden im Kontext des Kick-Offs die Ziele dargelegt und auch auf ihre Akzeptanz hin überprüft. Die Stakeholder auf Seiten der \gls{BG} \gls{Bau} wurden innerhalb der 1. \gls{Umlage}informationsmeetings informiert.
+\item \textbf{Definition von ''Nicht-Zielen'':} Es wurden keine ''Nicht-Ziele'' vereinbart. Diese ergeben sich lediglich aus der Nichtberücksichtigung durch die Ziele.
+\item \textbf{Definition von Erfolgsfaktoren:} Das Team selber ist der größte Erfolgsfaktor in diesem Projekt und wurde deswegen auch innerhalb des Kick-Offs auf das Projekt ''eingeschworen''. Die wichtige Rolle wurde allen Teammitgliedern, vor allem den \gls{MSG} externen Kollegen (s. \ref{sec:stakeholder}) verdeutlicht und vor Augen geführt.
+\item \textbf{Dokumentation der Vereinbarungen:} Die Ziele als wesentlichste Vereinbarung wurden dokumentiert und festgehalten.
+\item \textbf{Enge und zeitnahe Kommunikation:} Der Kommunikation wird in dem Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' ein großer Stellenwert eingeräumt. Es erfolgt eine direkte und häufige Kommunikation zu allen relevanten Beteiligten. Das Konzept dieser Kommunikation kann in der aufgestellten Kommunikationsmatrix \ref{tab:kommunikationsmatrix} abgelesen werden.
+\item \textbf{Regelmäßige Überprüfung von Zielen, Umfeld, Stakeholdern und Risiken:} Eine iterative Überprüfung findet mindestens zu jedem Meilenstein statt. Sollten sich aus der Kommunikation mit den Stakeholdern oder durch unvorhergesehene Ereignisse relevante Punkte ergeben, wird auch eine vorzeitige Überprüfung durchgeführt.
+\item \textbf{Mindestens phasenorierntierte Überprüfung und Anpassung der Rahmenparameter:} Diesem Punkt wird bereits durch die Überprüfung und Aktualisierung aller in der Planung entstandenen Dokumente Rechnung getragen.
+\item \textbf{Änderungsmanagment etablieren und pflegen:} Für das Projekt ''\gls{Umlage} 2010 - \gls{EPBB}''  wird das Änderungsmanagment der Linie, des Projektes ''\gls{Phoenics}, verwendet. Dieser Prozess ist etabliert und allen Beteiligten gutbekannt. Hierbei wird über ein Change-Managment-Tool jede Änderung erfasst und mit der Referenz ''Projekt \gls{Umlage} 2010'' versehen. Alle Änderungen sind damit leicht auflistbar und suchbar.
+\item \textbf{Erfahrungen für Folgeprojekte auswerten:} Entsprechende Lessons Learned Sitzungen und die Nachdokumentierung der Projektergebnisse im Content Managment System sind fest in der Planung verankert (s. \ref{abb:psp}).
+\item \textbf{Unternehmerisches Denken anwenden:} Der Projektleiter achtet darauf, das Projekt als sein eigenes Unternehmen zu sehen. Ein Beispiel hierfür ist die Priorisierung von Bugfixes durch ihn. Bugfixes, die nicht direkt das Projekt tangieren (kleinere Fehler die sich nicht im Verhalten der Anwendung widerspiegeln), werden im Zuge des Projektes nicht korrigiert, sondern ledigich erfasst und dokumentiert. Jede dieser Fehlerbehebungen bedeutet Gewinn für die \gls{MSG} Systems und damit für die Firma des Projektleiters. Allerdings wird hier der langfristige Erfolg des Projektes vor den kurzfristig höheren Gewinn der eigenen Firma gesetzt.  
+\end{enumerate}
+
+Insgesamt lässt sich damit sagen, dass das Projekt weitestgehend allen Maßstäben der Erfolgsorientierung folgt. Ein Kritik Punkt sind die nicht definierten ''Nicht-Ziele''. Dieses Manko kann im abschließenden Lessons Learned Meeting angesprochen und dokumentiert werden. Hierdurch ist es nachfolgenden Projekten möglich, aus diesem Fehler zu lernen. 
+
+
+\chapter{Projektstart, Projektende}
+Den Phasen des Projektstarts und des Projektendes kommen in dem Lebenszyklus eines Projektes besondere Bedeutungen zu. \\
+Der Projektstart als Beginn eines Projektes stellt bereits auf eine sehr entscheidende Art die Weichen für den Rest eines Projektes. Grobe Fehler, die in dieser Phase begangen werden, können nur noch mit viel Mühe (oder gar nicht mehr) behoben werden. \\
+Das Projektende ist eine Phase die in vielen Projekten unterschätzt und deswegen häufig vernachlässigt wird. Die Abschlussarbeiten nach der Fertigstellung eines Projektes kennzeichnen wie das Projekt in Erinnerung behalten wird, wie das Projektteam auseinander geht und welche Erkenntnisse aus diesem Projekt für andere gewonnen werden können. 
+\\
+\\
+Beiden Phasen gemein ist, dass sie fast über alle Projekte hinweg einen groben einheitlichen Ablauf haben. Im Weiteren sind kurz die typischen Abläufe eines Projektstartes und eines Projektendes gekennzeichnet und mit der jeweiligen Phase des Projektes ''\gls{Umlage} 2010 - \gls{EPBB}'' verglichen. 
+\\
+\\
+Der typische Ablauf eines Projektstarts besteht aus den Abschnitten:
+\begin{description}
+\item[1. Projekt initialisieren] Der Auftrag für das Projekt geht ein und die Freigabe für das Projekt wird erteilt. Der Projektleiter wird bestimmt.
+\item[2. Projekt-Start-Workshop durchführen] Der Workshop legt die (vorläufige) Projektorganisation fest und es werden die benötigten Arbeitsmittel zur Verfügung gestellt.
+\item[3. Projekt definieren] Das Lösungskonzept wird erarbeitet und das Pflichtenheft wird erstellt. 
+\item[4. Projekt planen] Die Planung des Projektes wird erstellt.
+\item[5. Kick-Off durchführen] Das Projekt wird dem Projektteam vorgestellt. Es kennzeichnet weiterhin den Punkt an dem das Projekt für die Mitarbeiter beginnt. 
+\end{description}
+
+Diese Abschnitte des Projektstarts finden sich auch in dem beschriebenen Projekt wieder. Nach der Initialisierung des Projektes durch den Auftrag der \gls{BG} \gls{Bau} erfolgte die interne Freigabe durch den Entwicklungsleiter Jürgen Weiss. Dieser fungiert hierdurch als Projektauftraggeber. \\
+Statt eines offiziellen Projekt-Start-Workshops fand ein Treffen zwischen dem ausgewählten Projektleiter Arne Landwehr und Jürgen Weiss statt. Hier wurde der Umfang des Projektes bereits grob definiert und die Zusagen für die Bereitstellung der \gls{Testumgebungen} und der Server fand statt. \\
+Die Definitions- und Planungsphase wurde durch den Projektleiter durchgeführt. Die entstandenen Planungsdokumente und die Ziele wurden jeweils mit dem Entwicklungsleiter und der \gls{BG} \gls{Bau} abgestimmt. Die Bereitstellung der benötigten Mitarbeiter wurde dem Projektleiter zugesagt. \\
+Das anschließende Kick-Off fand in der Kantine der \gls{MSG} Systems in Ismaning unter Einbeziehung des gesamten Projektteams statt. Da eine gesonderte Informationsveranstaltung für den Kunden vorgesehen war und das Kick-Off zur Teambildung genutzt werden sollte waren keine Kundenvertreter anwesend.
+\\
+\\
+Der Projektstart besaß somit die üblichen und auch notwendigen Schritt, faste diese allerdings aufgrund der Größe des Projektes und der ''kurzen Wege'' zwischen dem Projektleiter und dem Projektauftraggeber zum Teil zusammen. Zu wenig beachtet wurden die Erkenntnisse aus früheren \gls{Umlage}läufen. Die Dokumentation dieser Projekte war allerdings auch nicht vollständig und geordnet vorhanden. Dennoch hätten hier Erkenntnisse gewonnen werden können die im späteren Projekt von Nutzen gewesen wären, z.B. die typische Anzahl an Fehlern die in früheren Abnahmen gefunden wurde.
+\\
+\\   
+Das Projektende besitzt ähnlich wie der Projektstart eine Reihe von charakterisierenden und immer wiederkehrenden Abschnitten:
+\begin{description}
+\item[1. Die Produktabnahme] Das Projektergebnis wird durch den Auftraggeber abgenommen.
+\item[2. Abschlussanalyse] Es werden die Nachkalkulation, die Abweichungsanalyse und die Analysen der Kundenzufriedenheit und der Wirtschaftlichkeit durchgeführt.
+\item[3. Erfahrungssicherung] Es findet mindestens eine Lessons Learned Sitzung satt und die relevanten Projektdokumente werden archiviert. 
+\item[4. Projektauflösung] Der Abschlussbericht wird in der Abschlusssitzung dargelegt und die durch das Projekt beanspruchten Ressourcen werden zurückgeführt. 
+\end{description}
+
+Auch diese Schritte finden sich im Projekt ''\gls{Umlage} 2010 - \gls{EPBB}'' wieder. Das Projektergebnis besteht in einer zur Zufriedenheit der \gls{BG} \gls{Bau} durchgeführten \gls{Umlage} 2010. Die Abnahme erfolgt durch den Projektauftraggeber Jürgen Weiss, in dem er sich die Rückmeldung der \gls{BG} \gls{Bau} Vertreter geben ließ. Zu beachten ist, dass die Phase ''Abnahme Test'' keine Abnahme im Sinne des Projektes kennzeichnet, sondern den durch \gls{Pro3} vorgegebenen Kundentest von neuen oder angepassten Softwarekomponenten. \\
+Die Abschlussanalyse wurde durch den Projektleiter in Form einer Präsentation vor dem Entwicklungsleiter und den Komponentenleitern durchgeführt. Hier wurde sowohl die Zufriedenheit des Kunden und damit der Projekterfolg präsentiert, als auch die unter Plan verlaufenen Gesamtkosten. \\
+Für die Erfahrungssicherung wurde der Projektleiter für eine Woche von seiner Linienfunktion frei gestellt. So konnte er eine Lessons Learned Sitzung mit dem Projektteam abhalten und die Ergebnisse im Content Managment System ablegen. In diesem wurde eine eigene Rubrik für die \gls{Umlage} 2010 geschaffen und die Projektdokumente wurden zusammen mit einem Erfahrungsbericht archiviert. \\
+Da es sich um ein Projekt in einem Projekt handelte, für das werder neue Mitarbeiter noch Sachmittel angeschafft werden mussten, stellte sich die Rückführung beider als einfach dar.
+\\
+\\
+Hiermit kann der Abschluss des Projektes sowie das Projekt selber als erfolgreich angesehen werden.      
+
 
 
 % Abkürzungsverzeichnis
@@ -622,18 +752,16 @@ Die Verantwortung des Projektleiter liegt dabei hauptsächlich auf der Handlungs-
 % Glossar
 
 % Abbildungsverzeichnis
-   % \clearpage
+   % \clear\gls{PAG}e
     \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
     \listoffigures
 % Tabellenverzeichnis
-  %  \clearpage
+  %  \clear\gls{PAG}e
     \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
     \listoftables
 
 
-\gls{perl}
-\gls{elite}
- \gls{svm}
+
 \printglossaries
 
 \bibliographystyle{alphadin}

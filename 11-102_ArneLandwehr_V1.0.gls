@@ -1,0 +1,65 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{Abnahmeumgebungen}{\glsnamefont{Abnahmeumgebungen}}{Bezeichnung für die Computer mit laufenden Phoenics Installation auf denen der Abnahmetest durchgeführt wird}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{10}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{Batch}{\glsnamefont{Batch}}{Software die nach ihrem Start automatisch bestimmte Aufgaben erledigt.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}\delimN 
+		\setentrycounter{page}\glsnumberformat{6}}}%
+\glossaryentryfield{Berufsgenossenschaft}{\glsnamefont{Berufsgenossenschaft}}{Die gewerblichen Berufsgenossenschaften sind die Träger der gesetzlichen Unfallversicherung für die Unternehmen der deutschen Privatwirtschaft und deren Beschäftigte}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}}}%
+\glossaryentryfield{Bezirksverwaltungen}{\glsnamefont{Bezirksverwaltungen}}{Standorte einer Berufsgenossenschaft die jeweils für eine bestimmtes Gebiet in Deutschland zuständig sind.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}\delimN 
+		\setentrycounter{page}\glsnumberformat{10}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{Entwicklernachweis}{\glsnamefont{Entwicklernachweis}}{Ein im Projekt Phoenics verwendetes Qualitätssicherungsdokument, mit dem er versichert das seine Implementierung den Qualitätsstandards genügt.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{28}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossaryentryfield{Gefahrklassen}{\glsnamefont{Gefahrklassen}}{Jedes bei einer BG versicherte Unternehmen bekommt eine Gefahrklasse. Diese bestimmt wie wahrscheinlich ein Arbeitsunfall in diesem unternehmen ist und stellt einen Faktor für den Versicherungsbeitrag dar.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{Integration}{\glsnamefont{Integration}}{Bezeichnung für das Zusammenführen von verschiedenen Softwarekomponenten zu einem System.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{8}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{Laufzeit}{\glsnamefont{Laufzeit}}{Die Zeit die ein Batch von seinem Start bis zu seinem Ende benötigt.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{5\delimN 6}}}%
+\glossaryentryfield{Lohnsummen}{\glsnamefont{Lohnsummen}}{Die Summe an Gehalt die ein Unternehmen allen seinen Mitarbeitern in einem Jahr bezahlt, dient als Grundlage für die Versicherungssumme die der Unternehmer an die Berufsgenossenschaft zahlen muss}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{Mitglieder}{\glsnamefont{Mitglieder}}{Die bei einer Berufsgenossenschaft pflichtversicherten Unternehmen.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{Phoenics}{\glsnamefont{Phoenics}}{Name der Software die die Prozesse einer Berufsgenossenschaft abbildet und bei der BG Bau eingesetzt wird. Ebenfalls Name des Projektes das die Software Phoenics einführt und wartet.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimN 3}\delimN 
+		\setentrycounter{page}\glsnumberformat{20}\delimN 
+		\setentrycounter{page}\glsnumberformat{27}\delimN 
+		\setentrycounter{page}\glsnumberformat{38\delimN 39}\delimN 
+		\setentrycounter{page}\glsnumberformat{49}}}%
+\glossaryentryfield{Pro3}{\glsnamefont{Pro3}}{Vorgehensmodell des Projektes Phoenics, basiert auf Profi}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{27\delimN 28}\delimN 
+		\setentrycounter{page}\glsnumberformat{38\delimN 39}\delimN 
+		\setentrycounter{page}\glsnumberformat{48}\delimN 
+		\setentrycounter{page}\glsnumberformat{52}}}%
+\glossaryentryfield{Profi}{\glsnamefont{Profi}}{Vorgehensmodell der MSG Systems AG, basiert auf dem Rational Unified Process}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{27}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossaryentryfield{Testumgebungen}{\glsnamefont{Testumgebungen}}{Bezeichnung für die Computer mit laufenden Phoenics Installation auf denen der Test durchgeführt wird}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{38}\delimN 
+		\setentrycounter{page}\glsnumberformat{52}}}\glsgroupskip
+\glsgroupheading{U}\relax \glsresetentrylist %
+\glossaryentryfield{Umlage}{\glsnamefont{Umlage}}{Das Umlageverfahren ist eine Methode zur Finanzierung von Sozialversicherungen, speziell der Altersvorsorge, aber auch von Krankenversicherung und Arbeitslosenversicherung. Die eingezahlten Beiträge werden unmittelbar für die Finanzierung der erbrachten Leistungen herangezogen.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{2\delimR 6}\delimN 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{20}\delimN 
+		\setentrycounter{page}\glsnumberformat{24}\delimN 
+		\setentrycounter{page}\glsnumberformat{27}\delimN 
+		\setentrycounter{page}\glsnumberformat{31}\delimN 
+		\setentrycounter{page}\glsnumberformat{35}\delimN 
+		\setentrycounter{page}\glsnumberformat{38}\delimN 
+		\setentrycounter{page}\glsnumberformat{46}\delimN 
+		\setentrycounter{page}\glsnumberformat{48\delimN 49}\delimN 
+		\setentrycounter{page}\glsnumberformat{51\delimR 53}}}%
+\end{theglossary}\glossarypostamble

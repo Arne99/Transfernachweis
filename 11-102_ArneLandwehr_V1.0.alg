@@ -1,0 +1,7 @@
+This is makeindex, version 2.15 [TeX Live 2010] (kpathsea + Thai support).
+Scanning style file ./11-102_ArneLandwehr_V1.0.ist...........................done (27 attributes redefined, 0 ignored).
+Scanning input file 11-102_ArneLandwehr_V1.0.acn....done (101 entries accepted, 0 rejected).
+Sorting entries....done (725 comparisons).
+Generating output file 11-102_ArneLandwehr_V1.0.acr....done (58 lines written, 0 warnings).
+Output written in 11-102_ArneLandwehr_V1.0.acr.
+Transcript written in 11-102_ArneLandwehr_V1.0.alg.
