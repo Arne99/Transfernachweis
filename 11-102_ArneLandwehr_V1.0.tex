@@ -9,11 +9,28 @@
 \usepackage{ngerman}%Silbentrennung nach neuer Rechtschreibung
 \usepackage{subfigure}
 \usepackage{color} % Farbiger Text
-\usepackage{graphicx} %Funktionen zum Einf?gen von Bildern
+\usepackage{graphicx} %Funktionen zum Einf?g
 \usepackage[pdftex,bookmarks=true]{hyperref}
+\usepackage[acronym]{glossaries}
 
+\glstoctrue
+\renewcommand{\glossaryname}{Glossar}
+\renewcommand{\acronymname}{Abkürzungsverzeichnis}
+
+\makeglossaries
+
+\newglossaryentry{perl}{name=Perl,
+description=A scripting language}
+
+\newglossaryentry{elite}{name={Elite},
+description={select group or class}}
+
+
+\newacronym{svm}{svm}{support vector machine}
 
 \begin{document}
+
+  
 
 % Titelblatt
  \input{Abschnitte/Titel}
@@ -585,6 +602,17 @@ Der vorgestellte Prozess kann damit als hinreichend gut bewertet werden, allerdi
 
 \section{Ergebnisorientierung}
 \label{sec:ergebnisorientierung}
+Projekte sollen mit Hilfe eines guten Projektmanagments zu einem Erfolg geführt werden, sprich sie am Ende des Projektes soll ein Ergebnis stehen mit dem alle beteiligte Stakeholder einverstanden sind. Auf dieses Ergebnis muss Zielgerichtet und fokussiert hingearbeitet werden. Neben der Etablierung eines Prozesses der diese Fokussierung des Projektteams fördert ist sind auch die sozialen Kompetenzen des Projektleiters gefordert. \\
+An ihm als Person liegt es, dauerhaft und iterativ über die gesamte Projektlaufzeit hinweg, dem Projektteam ein einheitliches Ziel zu vermitteln und den Kurs auf dieses zu wahren. Ergebnisorientierung spielt sich damit über den gesamten Ablauf eines Projektes ab und kann als Meta-Ebene verstanden werden auf der der Projektleiter stetig seine Handlungsoptionen überprüfen und bewerten muss.
+\\
+\\
+Die Ergebnisorientierung lässt sich dabei nach folgenden Betrachtungsebenen unterscheiden:
+\begin{description}
+\item[Die Objekt-Ebene] beinhaltet die Verbesserung oder Erstellung eines einzelnen Produktes, einer Lösung oder eines Prozeses.
+\item[DIe Handlungs-Ebene] beinhaltet die reine Abwicklung des Projektes, hierbei wird noch einmal unterschieden in die Methodische-Ebene (Kosten, Zeit, Leistung ... ) und die Soziale-Ebene(Kommunikation, Führung ...).
+\end{description}   
+
+Die Verantwortung des Projektleiter liegt dabei hauptsächlich auf der Handlungs-Ebene.
 
 \chapter{Berichtswesen, Projektdokumentation}
 
@@ -602,6 +630,11 @@ Der vorgestellte Prozess kann damit als hinreichend gut bewertet werden, allerdi
     \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
     \listoftables
 
+
+\gls{perl}
+\gls{elite}
+ \gls{svm}
+\printglossaries
 
 \bibliographystyle{alphadin}
 

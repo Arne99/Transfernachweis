@@ -28,3 +28,5 @@
 \contentsline {chapter}{\numberline {10}Berichtswesen, Projektdokumentation}{47}{chapter.10}
 \contentsline {chapter}{Abbildungsverzeichnis}{47}{chapter.10}
 \contentsline {chapter}{Tabellenverzeichnis}{48}{chapter*.2}
+\contentsline {chapter}{Glossar}{50}{section*.4}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{51}{section*.6}
